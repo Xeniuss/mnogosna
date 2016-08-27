@@ -1,0 +1,946 @@
+
+<!doctype html>
+<html class="no-js" lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <script src="https://use.typekit.net/lxf4ika.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  </head>
+  <body>
+
+    <div class="off-canvas-wrapper">
+    	<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+    <div class="row">
+    	<div class="large-2 medium-3 small-4 columns header__logo-wrap small-push-3 large-push-0 medium-push-0">
+    		<a href="/">
+    			<img class="header__logo" src="/assets/img/logo.png" alt="">
+    		</a>
+    	</div>
+    	<div class="large-8 medium-7 small-6 columns">
+    		<div class="large-7 medium-7 small-7 show-for-large columns">
+    			<div class="input-group">
+    				<input class="header__search input-group-field" type="search" placeholder="Поиск">
+    				<div class="input-group-button">
+    					<input class="header__search-button button" type="submit" value="">
+    				</div>
+    			</div>
+    		</div>
+    		<div class="large-3 medium-4 small-4 medium-push-7 small-push-6 large-push-0 columns">
+    			<a href="javascript:void(0);" class="header__choose-location show-for-large"  data-open="city-popup"><i class="ms-header__icon hide-for-medium-only">
+    				<img src="assets/img/icons/location.png" alt=""></i>Москва</a>
+    			<a href="javascript:void(0);" class="header__cart" data-open="cart-popup"><i class="ms-header__icon show-for-large"><img src="assets/img/icons/cart.png" alt=""></i><span class="hide-for-small-only">Корзина</span><span class="badge">2</span></a>
+    		</div>
+    		<div class="main-navigation large-7 medium-7 show-for-large small-7 columns">
+    			<ul class="main-menu">
+    				<li class="main-menu__item"><a class="link" href="#">Магазин</a></li>
+    				<li class="main-menu__item"><a class="link" href="/shipping.html">Доставка и оплата</a></li>
+    				<li class="main-menu__item"><a class="link" href="/contacts.html">Контакты</a></li>
+    				<li class="main-menu__item"><a class="link" href="#">О нас</a></li>
+    				<li class="main-menu__item"><a class="link" href="#">Гарантия</a></li>
+    				<li class="main-menu__item"><a class="link" href="blog.html">Блог</a></li>
+    			</ul>
+    		</div>
+    		<div class="contacts large-3 medium-6 small-3 hide-for-small-only ms-number-wrap medium-pull-5 large-pull-0 columns" data-toggle="getcall-header">
+    			<span class="number">+ 7 495 278 08 91 · Позвонить&nbsp;вам?</span>
+    			<div class="ms-custom-modal is-hidden" id="getcall-header" data-toggler="is-hidden">
+    				<p>Вам перезвонят, в течении 15 минут</p>
+    				<small>На самом деле нет</small>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    <div class="off-canvas position-right" id="offCanvasRight" data-off-canvas data-position="right">
+    <nav class="ms-mobilenav">
+    	<ul class="main-menu">
+    		<li class="main-menu__item"><a class="link" href="#">Магазин</a></li>
+    		<li class="main-menu__item"><a class="link" href="/shipping.html">Доставка и оплата</a></li>
+    		<li class="main-menu__item"><a class="link" href="/contacts.html">Контакты</a></li>
+    		<li class="main-menu__item"><a class="link" href="#">О нас</a></li>
+    		<li class="main-menu__item"><a class="link" href="#">Гарантия</a></li>
+    		<li class="main-menu__item"><a class="link" href="blog.html">Блог</a></li>
+    	</ul>
+    </nav>
+    </div>
+    
+    
+    <div class="row ms-mobilenav_wrap hide-for-large">
+    	<div class="medium-7 small-7 columns">
+    		<button type="button" class="ms-mobilenav_trigger" data-toggle="offCanvasLeft" data-open="offCanvasLeft"><i class="fa fa-navicon"></i> Каталог</button>
+    	</div>
+    	<button type="button" class="medium-3 small-3 columns ms-shop-button" data-toggle="offCanvasRight" data-open="offCanvasRight">Магазин</button>
+    </div>
+    
+    <div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas data-position="left">
+    <div class="mob-sidebar">
+    	<div class="large-2 medium-10 small-10 columns ms-sidebar">
+    		<ul class="vertical menu" data-accordion-menu>
+    			<li>
+    				<a class="link ms-sidebar__accordion" href="javascript:void(0);">Акции</a>
+    				<ul class="menu vertical nested">
+    					<li><a class="ms-sidebar__link" href="javascript:void(0);">Акция 1</a></li>
+    					<li><a class="ms-sidebar__link" href="javascript:void(0);">Акция 2</a></li>
+    				</ul>
+    			</li>
+    			<li>
+    				<a class="link ms-sidebar__accordion" href="javascript:void(0);">Матрасы</a>
+    				<ul class="menu vertical nested">
+    					<li><a class="ms-sidebar__link" href="javascript:void(0);">Матрас 1</a></li>
+    					<li><a class="ms-sidebar__link" href="javascript:void(0);">Матрас 2</a></li>
+    				</ul>
+    			</li>
+    			<li>
+    				<a class="link ms-sidebar__accordion" href="javascript:void(0);">Кровати</a>
+    				<ul class="menu vertical nested">
+    					<li><a class="ms-sidebar__link" href="javascript:void(0);">Кровать 1</a></li>
+    					<li><a class="ms-sidebar__link" href="javascript:void(0);">Кровать 2</a></li>
+    				</ul>
+    			</li>
+    			<li>
+    				<a class="link ms-sidebar__accordion" href="javascript:void(0);">Аксессуары</a>
+    				<ul class="menu vertical nested">
+    					<li><a class="ms-sidebar__link" href="javascript:void(0);">Аксессуар 1</a></li>
+    					<li><a class="ms-sidebar__link" href="javascript:void(0);">Аксессуар 2</a></li>
+    				</ul>
+    			</li>
+    			<li>
+    				<a class="link ms-sidebar__accordion" href="javascript:void(0);">Мебель для спальни</a>
+    				<ul class="menu vertical nested">
+    					<li><a class="ms-sidebar__link" href="javascript:void(0);">Мебель для спальни 1</a></li>
+    					<li><a class="ms-sidebar__link" href="javascript:void(0);">Мебель для спальни 2</a></li>
+    				</ul>
+    			</li>
+    			<li>
+    				<a class="link ms-sidebar__accordion" href="javascript:void(0);">Производители</a>
+    				<ul class="menu vertical nested">
+    					<li><a class="ms-sidebar__link" href="javascript:void(0);">Производитель 1</a></li>
+    					<li><a class="ms-sidebar__link" href="javascript:void(0);">Производитель 2</a></li>
+    				</ul>
+    			</li>
+    		</ul>
+    	</div>
+    </div>
+    </div>
+    
+    
+    <div class="row">
+        <div class="large-2 medium-2 small-2 show-for-large columns ms-sidebar">
+        	<ul class="vertical menu" data-accordion-menu>
+        		<li>
+        			<a class="link ms-sidebar__accordion" href="javascript:void(0);">Акции</a>
+        			<ul class="menu vertical nested">
+        				<li><a class="ms-sidebar__link" href="javascript:void(0);">Акция 1</a></li>
+        				<li><a class="ms-sidebar__link" href="javascript:void(0);">Акция 2</a></li>
+        			</ul>
+        		</li>
+        		<li>
+        			<a class="link ms-sidebar__accordion" href="javascript:void(0);">Матрасы</a>
+        			<ul class="menu vertical nested">
+        				<li><a class="ms-sidebar__link" href="javascript:void(0);">Матрас 1</a></li>
+        				<li><a class="ms-sidebar__link" href="javascript:void(0);">Матрас 2</a></li>
+        			</ul>
+        		</li>
+        		<li>
+        			<a class="link ms-sidebar__accordion" href="javascript:void(0);">Кровати</a>
+        			<ul class="menu vertical nested">
+        				<li><a class="ms-sidebar__link" href="javascript:void(0);">Кровать 1</a></li>
+        				<li><a class="ms-sidebar__link" href="javascript:void(0);">Кровать 2</a></li>
+        			</ul>
+        		</li>
+        		<li>
+        			<a class="link ms-sidebar__accordion" href="javascript:void(0);">Аксессуары</a>
+        			<ul class="menu vertical nested">
+        				<li><a class="ms-sidebar__link" href="javascript:void(0);">Аксессуар 1</a></li>
+        				<li><a class="ms-sidebar__link" href="javascript:void(0);">Аксессуар 2</a></li>
+        			</ul>
+        		</li>
+        		<li>
+        			<a class="link ms-sidebar__accordion" href="javascript:void(0);">Мебель для спальни</a>
+        			<ul class="menu vertical nested">
+        				<li><a class="ms-sidebar__link" href="javascript:void(0);">Мебель для спальни 1</a></li>
+        				<li><a class="ms-sidebar__link" href="javascript:void(0);">Мебель для спальни 2</a></li>
+        			</ul>
+        		</li>
+        		<li>
+        			<a class="link ms-sidebar__accordion" href="javascript:void(0);">Производители</a>
+        			<ul class="menu vertical nested">
+        				<li><a class="ms-sidebar__link" href="javascript:void(0);">Производитель 1</a></li>
+        				<li><a class="ms-sidebar__link" href="javascript:void(0);">Производитель 2</a></li>
+        			</ul>
+        		</li>
+        	</ul>
+        </div>
+        
+        <!--
+        =================
+        Слайдер
+        =================
+        P.S. inline стили для динамического изменения фона через PHP
+        -->
+        
+        <div class="ms-carousel large-8 medium-10 small-10 columns orbit" role="region" aria-label="suggested product" data-orbit data-auto-play="0">
+            <ul class="orbit-container">
+                <button class="orbit-previous hide-for-small-only"><img src="assets/img/mainpage/left_arrow.png" alt=""></button>
+                <button class="orbit-next hide-for-small-only"><img src="assets/img/mainpage/right_arrow.png" alt=""></button>
+                <li style="background-image: url('assets/img/mainpage/slidebg.png');" class="orbit-slide ms-carousel__slide">
+                    <h1>Новый вид матрасов<br>этой весной</h1>
+                    <a href="javascript:void(0);" class="button -blackrounded"><i class="fa fa-shopping-cart"></i>В корзину</a>
+                </li>
+                <li style="background-image: url('assets/img/mainpage/slidebg.png');" class="orbit-slide ms-carousel__slide">
+                    <h1>Новый вид матрасов<br>этой весной</h1>
+                    <a href="javascript:void(0);" class="button -blackrounded"><i class="fa fa-shopping-cart"></i>В корзину</a>
+                </li>
+                <li style="background-image: url('assets/img/mainpage/slidebg.png');" class="orbit-slide ms-carousel__slide">
+                    <h1>Новый вид матрасов<br>этой весной</h1>
+                    <a href="javascript:void(0);" class="button -blackrounded"><i class="fa fa-shopping-cart"></i>В корзину</a>
+                </li>
+            </ul>
+            <nav class="orbit-bullets">
+                <button class="is-active" data-slide="0"><span class="show-for-sr">First slide</span></button>
+                <button data-slide="1"><span class="show-for-sr">Second slide</span></button>
+                <button data-slide="2"><span class="show-for-sr">Third slide</span></button>
+            </nav>
+        </div>
+        
+    
+    
+        <div class="large-8 medium-10 small-10 float-right columns">
+            <h2 class="text-center ms-mainpage__header -with-margin">Фильтр</h2>
+            <form action="">
+                <div class="filter-column__wrap">
+                <!-- first column -->
+                <div class="filter-column columns">
+                    <div class="small-10 columns row">
+                    <ul class="vertical menu" data-accordion-menu>
+            
+                        <!--Цена начало-->
+                        <li>
+                            <a href="javascript:void(0);" class="is-active">
+                                <span data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="1" title="Вспомогательный текст" class="badge helper has-tip">?</span> Цена</a>
+                            <ul class="menu vertical nested is-active">
+            
+                                      <div class="row columns ms-filter-slider-fix">
+                                          <div class="small-4 columns">
+                                              <input type="number" class="ms-form-number" id="sliderOutput1">
+                                          </div>
+                                          <div class="small-1 columns">
+                                              <span class="ms-form-number__text">—</span>
+                                          </div>
+                                          <div class="small-4 columns">
+                                              <input type="number" class="ms-form-number" id="sliderOutput2">
+                                          </div>
+                                          <div class="small-1 columns">
+                                              <span class="ms-form-number__text -rub">руб</span>
+                                          </div>
+                                      </div>
+                                <div class="slider" data-slider data-initial-start="1200" data-initial-end="10000" data-step="500" data-end="20000">
+                                            <span class="slider-handle" data-slider-handle role="slider" tabindex="1"
+                                                  aria-controls="sliderOutput1"></span>
+                                    <span class="slider-fill" data-slider-fill></span>
+                                            <span class="slider-handle" data-slider-handle role="slider" tabindex="2"
+                                                  aria-controls="sliderOutput2"></span>
+                                </div>
+                                </ul>
+                        </li>
+                        <!--Цена конец-->
+            
+                        <!--Размер начало-->
+                        <li>
+                            <a href="javascript:void(0);" class="is-active">
+                                    <span data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="1" title="Вспомогательный текст"
+                                          class="badge helper has-tip">?</span>
+                                Размер</a>
+                            <ul class="menu vertical nested is-active">
+                                <select>
+                                    <option value="150х160">150 х 160 см</option>
+                                    <option value="150х170">150 х 170 см</option>
+                                    <option value="170х210">170 х 210 см</option>
+                                    <option value="150х160">150 х 160 см</option>
+                                    <option value="150х170">150 х 170 см</option>
+                                    <option value="170х210">170 х 210 см</option>
+                                </select>
+                            </ul>
+                        </li>
+                        <!--Размер конец-->
+            
+                        <!--Разная жесткость сторон начало-->
+                        <li>
+                            <a href="javascript:void(0);">
+                                             <span data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="1"
+                                                   title="Вспомогательный текст" class="badge helper has-tip">?</span>
+                                Разная жесткость сторон</a>
+                            <ul class="menu vertical nested">
+                                <li><input type="radio" name="raznaya" value="yes" id="raznayayes" required><label for="raznayayes">Да</label></li>
+                                <li><input type="radio" name="raznaya" value="no" id="raznayano"><label for="raznayano">Нет</label></li>
+                                <li><input type="radio" name="raznaya" value="idontknow" id="raznayaidontknow" checked><label for="raznayaidontknow">Не важно</label></li>
+                            </ul>
+                        </li>
+                        <!--Разная жесткость сторон конец-->
+            
+                        <!--Жесткость 1-ой стороны начало-->
+                        <li>
+                            <a href="javascript:void(0);">
+                                    <span data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="1" title="Вспомогательный текст"
+                                          class="badge helper has-tip">?</span>
+                                Жесткость 1-ой стороны</a>
+                            <ul class="menu vertical nested">
+                                <li><input id="checkbox11" type="checkbox"><label for="checkbox11">Мягкий</label></li>
+                                <li><input id="checkbox12" type="checkbox"><label for="checkbox12">Умеренно мягкий</label></li>
+                                <li><input id="checkbox13" type="checkbox"><label for="checkbox13">Средний</label></li>
+                                <li><input id="checkbox14" type="checkbox"><label for="checkbox14">Умеренно жесткий</label></li>
+                                <li><input id="checkbox15" type="checkbox"><label for="checkbox15">Жесткий</label></li>
+                            </ul>
+                        </li>
+                        <!--Жесткость 1-ой стороны конец-->
+            
+                        <!--Жесткость 2-ой стороны начало-->
+                        <li>
+                            <a href="javascript:void(0);">
+                                    <span data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="1" title="Вспомогательный текст"
+                                          class="badge helper has-tip">?</span>
+                                Жесткость 2-ой стороны</a>
+                            <ul class="menu vertical nested">
+                                <li><input id="checkbox21" type="checkbox"><label for="checkbox21">Мягкий</label></li>
+                                <li><input id="checkbox22" type="checkbox"><label for="checkbox22">Умеренно мягкий</label></li>
+                                <li><input id="checkbox23" type="checkbox"><label for="checkbox23">Средний</label></li>
+                                <li><input id="checkbox24" type="checkbox"><label for="checkbox24">Умеренно жесткий</label></li>
+                                <li><input id="checkbox25" type="checkbox"><label for="checkbox25">Жесткий</label></li>
+                            </ul>
+                        </li>
+                        <!--Жесткость 2-ой стороны конец-->
+            
+                        <!--Производитель начало-->
+                        <li>
+                            <a href="javascript:void(0);">
+                                    <span data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="1" title="Вспомогательный текст"
+                                          class="badge helper has-tip">?</span>
+                                Производитель</a>
+                            <ul class="menu vertical nested">
+                                <li>
+                                    <div class="input-group">
+                                        <input class="filter__search input-group-field" type="search">
+                                        <div class="input-group-button">
+                                            <input class="filter__search-button button" type="submit" value="O">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><input id="checkbox31" type="checkbox"><label for="checkbox31">DreamLine</label></li>
+                                <li><input id="checkbox32" type="checkbox"><label for="checkbox32">DREAM EXPERT</label></li>
+                                <li><input id="checkbox33" type="checkbox"><label for="checkbox33">BENARTTI</label></li>
+                                <li><input id="checkbox34" type="checkbox"><label for="checkbox34">Comfort LINE</label></li>
+                            </ul>
+                        <li>
+                            <!--Производитель конец-->
+            
+                    </ul>
+            
+                </div>
+                    </div>
+                <!-- first column end -->
+                <!-- second column -->
+                <div class="filter-column columns">
+                    <div class="small-10 medium-10 large-10 columns">
+            
+                        <ul class="vertical menu" data-accordion-menu>
+            
+                            <!--Тип матраса начало-->
+                            <li>
+                                <a href="javascript:void(0);" class="is-active">
+                                    <span data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="1"
+                                          title="Вспомогательный текст" class="badge helper has-tip">?</span>
+                                    Тип матраса</a>
+                                <ul class="menu vertical nested is-active">
+                                    <li><input id="checkbox41" type="checkbox"><label for="checkbox41">Беспружинный</label></li>
+                                    <li><input id="checkbox42" type="checkbox"><label for="checkbox42">Пружинный</label></li>
+                                    <li><input id="checkbox43" type="checkbox"><label for="checkbox43">Обычный</label></li>
+                                </ul>
+                            </li>
+                            <!--Тип матраса конец-->
+            
+                            <!--Высота начало-->
+                            <li>
+                                <a href="javascript:void(0);" class="is-active"><span><span data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="1"
+                                                                                            title="Вспомогательный текст" class="badge helper has-tip">?</span> Высота</span>
+                                </a>
+                                <ul class="menu vertical nested is-active">
+                                    <li>
+                                        <div class="row columns ms-filter-slider-fix">
+                                            <div class="small-4 columns">
+                                                <input type="number" class="ms-form-number" id="sliderOutput3">
+                                            </div>
+                                            <div class="small-1 columns">
+                                                <span class="ms-form-number__text">—</span>
+                                            </div>
+                                            <div class="small-4 columns">
+                                                <input type="number" class="ms-form-number" id="sliderOutput4">
+                                            </div>
+                                            <div class="small-1 columns">
+                                                <span class="ms-form-number__text -rub">см</span>
+                                            </div>
+                                        </div>
+                                        <div class="slider" data-slider data-initial-start="100" data-initial-end="200" data-step="10" data-end="300">
+                                            <span class="slider-handle" data-slider-handle role="slider" tabindex="3" aria-controls="sliderOutput3"></span>
+                                            <span class="slider-fill" data-slider-fill></span>
+                                            <span class="slider-handle" data-slider-handle role="slider" tabindex="4" aria-controls="sliderOutput4"></span>
+                                        </div>
+            
+                                    </li>
+                                </ul>
+                            </li>
+                            <!--Высота конец-->
+            
+                            <!--Анатомичность начало-->
+                            <li><a href="javascript:void(0);">
+                                <span data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="1" title="Вспомогательный текст"
+                                      class="badge helper has-tip">?</span> Анатомичность</a>
+                                <ul class="menu vertical nested">
+                                    <li><input id="checkbox51" type="checkbox"><label for="checkbox51">Отличная</label></li>
+                                    <li><input id="checkbox52" type="checkbox"><label for="checkbox52">Очень хорошая</label></li>
+                                    <li><input id="checkbox53" type="checkbox"><label for="checkbox53">Средняя</label></li>
+                                    <li><input id="checkbox54" type="checkbox"><label for="checkbox54">Начальная</label></li>
+                                </ul>
+                            </li>
+                            <!--Анатомичность конец-->
+            
+                        </ul>
+                    </div>
+                </div>
+                <!-- second column end -->
+                <!-- third column -->
+                <div class="filter-column columns">
+                    <div class="small-10 medium-10 large-10 columns">
+                        <ul class="vertical menu" data-accordion-menu>
+                            <!--Вес начало-->
+                            <li>
+                                <a href="javascript:void(0);" class="is-active"><span><span data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="1"
+                                                                                            title="Вспомогательный текст" class="badge helper has-tip">?</span> Максимальный вес</span>
+                                </a>
+                                <ul class="menu vertical nested is-active">
+                                    <li>
+                                        <div class="row columns ms-filter-slider-fix">
+                                            <div class="small-4 columns">
+                                                <input type="number" class="ms-form-number" id="sliderOutput5">
+                                            </div>
+                                            <div class="small-1 columns">
+                                                <span class="ms-form-number__text">—</span>
+                                            </div>
+                                            <div class="small-4 columns">
+                                                <input type="number" class="ms-form-number" id="sliderOutput6">
+                                            </div>
+                                            <div class="small-1 columns">
+                                                <span class="ms-form-number__text -rub">кг</span>
+                                            </div>
+                                        </div>
+                                        <div class="slider" data-slider data-initial-start="21" data-initial-end="200" data-step="1" data-end="200">
+                                            <span class="slider-handle" data-slider-handle role="slider" tabindex="5" aria-controls="sliderOutput5"></span>
+                                            <span class="slider-fill" data-slider-fill></span>
+                                            <span class="slider-handle" data-slider-handle role="slider" tabindex="6" aria-controls="sliderOutput6"></span>
+                                        </div>
+            
+                                    </li>
+                                </ul>
+                            </li>
+                            <!--Вес конец-->
+            
+                            <!--Кол-во пружин начало-->
+                            <li>
+                                <a href="javascript:void(0);">
+                                 <span data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="1"
+                                       title="Вспомогательный текст" class="badge helper has-tip">?</span>
+                                    Кол-во пружин</a>
+                                <ul class="menu vertical nested">
+                                    <li><input id="checkbox61" type="checkbox"><label for="checkbox61">Много</label></li>
+                                    <li><input id="checkbox62" type="checkbox"><label for="checkbox62">Мало</label></li>
+                                    <li><input id="checkbox63" type="checkbox"><label for="checkbox63">Немного</label></li>
+                                </ul>
+                            </li>
+                            <!--Кол-во пружин конец-->
+            
+                            <!--Натуральность материалов начало-->
+                            <li>
+                                <a href="javascript:void(0);">
+                                 <span data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="1"
+                                       title="Вспомогательный текст" class="badge helper has-tip">?</span>
+                                    Натуральность</a>
+                                <ul class="menu vertical nested">
+                                    <li><input id="checkbox71" type="checkbox"><label for="checkbox71">Высокая</label></li>
+                                    <li><input id="checkbox72" type="checkbox"><label for="checkbox72">Средняя</label></li>
+                                    <li><input id="checkbox73" type="checkbox"><label for="checkbox73">Низкая</label></li>
+                                </ul>
+                            </li>
+                            <!--Натуральность материалов конец-->
+                        </ul>
+                    </div>
+                </div>
+                <!-- third column end -->
+                <!-- fourth column -->
+                <div class="filter-column show-for-large columns">
+                    <div class="small-10 medium-10 large-10 columns">
+                        <ul class="vertical menu" data-accordion-menu>
+                            <!--Материалы начало-->
+                            <li>
+                                <a href="javascript:void(0);" class="is-active">
+                                     <span data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="1"
+                                           title="Вспомогательный текст" class="badge helper has-tip">?</span>
+                                    Материалы</a>
+                                <ul class="menu vertical nested is-active">
+                                    <li><input id="checkbox81" type="checkbox"><label for="checkbox81">Материал</label></li>
+                                    <li><input id="checkbox82" type="checkbox"><label for="checkbox82">Материал</label></li>
+                                    <li><input id="checkbox83" type="checkbox"><label for="checkbox83">Материал</label></li>
+                                </ul>
+                            </li>
+                            <!--Материалы конец-->
+            
+                            <!--Съемный чехол начало-->
+                            <li>
+                                <a href="javascript:void(0);" class="is-active">
+                                <span data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="1" title="Вспомогательный текст"
+                                      class="badge helper has-tip">?</span> Съемный чехол</a>
+                                <ul class="menu vertical nested is-active">
+                                    <li><input id="checkbox91" type="checkbox"><label for="checkbox91">Да</label></li>
+                                    <li><input id="checkbox92" type="checkbox"><label for="checkbox92">Нет</label></li>
+                                </ul>
+                            </li>
+                            <!--Съемный чехол конец-->
+            
+                            <!--Упаковка начало-->
+                            <li>
+                                <a href="javascript:void(0);">
+                                <span data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="1" title="Вспомогательный текст"
+                                      class="badge helper has-tip">?</span> Упаковка</a>
+                                <ul class="menu vertical nested">
+                                    <li><input id="checkbox101" type="checkbox"><label for="checkbox101">В рулоне</label></li>
+                                    <li><input id="checkbox102" type="checkbox"><label for="checkbox102">Упаковать</label></li>
+                                    <li><input id="checkbox103" type="checkbox"><label for="checkbox103">Не упаковывать</label></li>
+                                </ul>
+                            </li>
+                            <!--Упаковка конец-->
+                        </ul>
+            
+                    </div>
+                </div>
+                <!-- fourth column end -->
+                </div>
+                <div class="large-10 medium-10 small-10 columns text-center filter-action">
+                    <button class="button"><span>145</span> шт. <span class="ms-separator">•</span>Показать</button>
+                </div>
+            </form>
+            
+            
+        </div>
+    
+        <!--
+        =================
+        Новинки
+        =================
+        P.S. inline стили для динамического изменения фона через PHP
+        -->
+        
+        <div class="large-8 medium-10 small-10 float-right ms-new columns">
+            <h2 class="text-center ms-mainpage__header -with-margin">Новинки</h2>
+        </div>
+        <a href="javascript:void(0);">
+            <div style="background-image: url('assets/img/mainpage/11.png'); background-color: #9ca1a4;" class="large-4 medium-4 small-4 columns large-new-4 show-for-large ms-new__image ms-new__image--bg-left">
+                <h3>Шкаф Frea F4</h3>
+                <span>Удобный шкаф из темного ореха</span>
+            </div>
+        </a>
+        <div class="large-4 medium-7 small-10 columns">
+            <a href="">
+                <div style="background-image: url('assets/img/mainpage/22.png'); background-color: #8cccdd;" class="large-5 medium-5 small-10 columns small-new-2 ms-new__image ms-new__image--bg-float-left">
+                    <h3>Уютное  кресло</h3>
+                    <span>Кресло для спальной команты</span>
+                </div>
+            </a>
+            <a href="">
+                <div style="background-image: url('assets/img/mainpage/33.png'); background-color: #ea9aa5;" class="large-5 medium-5 small-10 columns small-new-2 ms-new__image ms-new__image--bg-float-left">
+                    <h3>Розовая подушка</h3>
+                    <span>И твоя комната выглядит иначе</span>
+                </div>
+            </a>
+            <a href="">
+                <div style="background-image: url('assets/img/mainpage/44.png'); background-color: #e6e1da;" class="large-10 medium-10 small-10 columns medium-new-4 ms-new__image ms-new__image--bg-float-bottom-left">
+                    <h3>Эконом матрас</h3>
+                    <span>Матрас из натуральных материалов, для простых кроватей</span>
+                </div>
+            </a>
+        </div>
+        <a href="">
+            <div style="background-image: url('assets/img/mainpage/55.png'); background-color: #d2d9cd;" class="large-2 medium-3 small-10 columns large-new-2 hide-for-small-only ms-new__image ms-new__image--bg-right">
+                <h3>Узкий  шкаф</h3>
+                <span>Идеальный вариант  для спальной команты</span>
+            </div>
+        </a>
+    
+        <div class="large-8 medium-10 small-10 float-right columns ms-news-block">
+            <h2 class="text-center ms-news-block__header ms-mainpage__header">Новости</h2>
+            <a href="">
+                <div style="background-image: url('assets/img/mainpage/news1.png');" class="large-5 medium-5 small-10 hide-for-small-only ms-news columns">
+                    <div class="ms-news__header">
+                        <h5>Изменение цен на кровати в 2016 году. <br>
+                            Обвал цен на матрасы во втором квартале</h5>
+                        <span class="ms-news__date">12 февраля</span>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div style="background-image: url('assets/img/mainpage/news2.png');" class="large-5 medium-5 small-10 columns ms-news">
+                    <div class="ms-news__header">
+                        <h5>Акция на диваны. -20%. <br>
+                            Подготовься к весне</h5>
+                        <span class="ms-news__date">12 февраля</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    
+    
+        <div class="large-6 medium-10 small-10 large-offset-2 ms-mainpade__textblock -without-margin columns">
+            <h2>Интернет-магазин матрасов «МногоСна»</h2>
+            <p>Интернет-магазин «МногоСна» — это опытная команда, способная проконсультировать по вопросам в сфере ортопедических матрасов и
+                сопутствующих товаров. </p>
+        </div>
+    
+            <blockquote class="large-8 medium-10 small-10 float-right columns">
+                <span>
+                    Консультанты помогут подобрать вариант под ваши <br>
+                потребности и проконсультируют по интересующим вопросам.
+                </span>
+            </blockquote>
+    
+        <div class="large-6 medium-10 small-10 end large-offset-2 ms-mainpade__textblock columns">
+            <h2>Реализация и доставка</h2>
+            <p>Реализуем в Москве и России только долговечную продукцию компаний со складов производителей. Каталог матрасов содержит бренды, зарекомендовавших репутацию на рынке качеством своих изделий и серьезным подходом к процессу производства.</p>
+        </div>
+            <div class="large-6 medium-10 small-10 end large-offset-2 ms-mainpade__textblock columns">
+                <h2>Гарантия качества производителя</h2>
+                <p>Произведенные фабриками изделия с гарантией качества и, обязательно, прошедшие сертификацию. Гарантийный срок составляет, как 6 месяцев, так и 10 лет — это зависит кто фабрика производитель и какие слои наполнения применяются в изделии.</p>
+            </div>
+    
+        <!--
+        =================
+        Популярные бренды
+        =================
+        P.S. inline стили для динамического изменения фона через PHP
+        -->
+        
+        <div class="large-6 medium-10 small-10 large-pull-2 float-right columns ms-popular-brand">
+            <h2>Популярные бренды</h2>
+            <img src="assets/img/mainpage/brands/beautyson.png" alt="" class="ms-popular-brand__images">
+            <img src="assets/img/mainpage/brands/ascona.png" alt="" class="ms-popular-brand__images">
+            <img src="assets/img/mainpage/brands/logo_perrino.png" alt="" class="ms-popular-brand__images">
+            <img src="assets/img/mainpage/brands/toris.png" alt="" class="ms-popular-brand__images">
+            <img src="assets/img/mainpage/brands/dream-inc-logo.png" alt="" class="ms-popular-brand__images">
+            <img src="assets/img/mainpage/brands/logo_ormatek.png" alt="" class="ms-popular-brand__images">
+            <img src="assets/img/mainpage/brands/dreamline.png" alt="" class="ms-popular-brand__images">
+            <img src="assets/img/mainpage/brands/rollmatraze.png" alt="" class="ms-popular-brand__images">
+        </div>
+        <!--
+        =================
+        Как выбрать ...
+        =================
+        P.S. inline стили для динамического изменения фона через PHP
+        -->
+        
+        <div class="large-8 medium-10 small-10 columns float-right">
+        
+            <div style="background-image: url('assets/img/mainpage/how-matr.png');" class="ms-how large-5 medium-5 small-10 hide-for-small-only columns">
+                <h3 class="ms-how__header">Как выбрать матрас</h3>
+                <span class="ms-how__text">Статья как правильно выбирать и подбирать матрас для Вас</span>
+                <a href="javascript:void(0);" class="ms-how__link">Подробнее</a>
+            </div>
+        
+            <div style="background-image: url('assets/img/mainpage/how-krov.png');" class="ms-how large-5 medium-5 small-10 hide-for-small-only columns">
+                <h3 class="ms-how__header -textblue">Выбираем кровать под матрас</h3>
+                <span class="ms-how__text">Статья как правильно выбирать и подбирать матрас для Вас</span>
+                <a href="javascript:void(0);" class="ms-how__link">Подробнее</a>
+            </div>
+        
+        </div>
+    </div>
+    <div class="row">
+        <div class="large-8 medium-10 small-10 columns ms-size-tag large-offset-2">
+            <a href="javascript:void(0);" class="ms-size-tag__link">70x186</a>
+            <a href="javascript:void(0);" class="ms-size-tag__link">70x186</a>
+            <a href="javascript:void(0);" class="ms-size-tag__link">70x186</a>
+            <a href="javascript:void(0);" class="ms-size-tag__link">70x186</a>
+            <a href="javascript:void(0);" class="ms-size-tag__link">70x186</a>
+            <a href="javascript:void(0);" class="ms-size-tag__link">70x186</a>
+            <a href="javascript:void(0);" class="ms-size-tag__link">70x186</a>
+            <a href="javascript:void(0);" class="ms-size-tag__link">70x186</a>
+            <a href="javascript:void(0);" class="ms-size-tag__link">70x186</a>
+            <a href="javascript:void(0);" class="ms-size-tag__link">70x186</a>
+            <a href="javascript:void(0);" class="ms-size-tag__link">70x186</a>
+            <a href="javascript:void(0);" class="ms-size-tag__link">70x186</a>
+            <a href="javascript:void(0);" class="ms-size-tag__link">70x186</a>
+            <a href="javascript:void(0);" class="ms-size-tag__link">70x186</a>
+            <a href="javascript:void(0);" class="ms-size-tag__link">70x186</a>
+            <a href="javascript:void(0);" class="ms-size-tag__link">70x186</a>
+            <a href="javascript:void(0);" class="ms-size-tag__link">70x186</a>
+            <a href="javascript:void(0);" class="ms-size-tag__link">70x186</a>
+        </div>
+    </div>
+    <div class="footer" data-equalizer="footer" id="footer-eq">
+        <div class="row">
+        <div class="large-4 medium-5 small-10 columns" data-equalizer-watch>
+            <span class="ms-footer__copyright">Все права защищены © 2016 MnogoSna.</span> <br>
+            <span class="ms-footer__seotext">Красивый SEO текст, мы такие классные, <br>
+            вертим уже с 2007 года...
+            </span>
+            <span class="ms-footer__number">+7 495-278-0891</span>
+        </div>
+        <div class="large-2 medium-2 small-2 columns show-for-large footer-sectiont" data-equalizer-watch="footer">
+            <h5>Категории</h5>
+            <ul class="no-bullet">
+                <li><a href="javascript:void(0);" class="footer__text-link">Матрасы</a></li>
+                <li><a href="javascript:void(0);" class="footer__text-link">Детские матрасы</a></li>
+                <li><a href="javascript:void(0);" class="footer__text-link">Основания для матраса</a></li>
+                <li><a href="javascript:void(0);" class="footer__text-link">Кровати</a></li>
+                <li><a href="javascript:void(0);" class="footer__text-link">Аксессуары</a></li>
+    
+            </ul>
+        </div>
+        <div class="large-2 medium-2 small-2 columns show-for-large footer-sectiont" data-equalizer-watch="footer">
+            <h5>Помощь</h5>
+            <ul class="no-bullet">
+                <li><a href="javascript:void(0);" class="footer__text-link">Контакты</a></li>
+                <li><a href="javascript:void(0);" class="footer__text-link">Блог</a></li>
+                <li><a href="javascript:void(0);" class="footer__text-link">Доставка</a></li>
+            </ul>
+        </div>
+        <div class="large-2 medium-4 small-10 columns footer-sectiont ms-social-block float-right" data-equalizer-watch="footer">
+            <h5>Follow us</h5>
+            <a href="javascript:void(0);" class="social"><i class="fa fa-facebook-f"></i></a>
+            <a href="javascript:void(0);" class="social"><i class="fa fa-twitter"></i></a>
+            <a href="javascript:void(0);" class="social"><i class="fa fa-instagram"></i></a>
+        </div>
+        <div class="large-10 medium-10 small-10 columns text-center ms-pay__wrap">
+            <a href="javascript:void(0);" class="pay"><img src="assets/img/icons/pay/nxpu.png" alt=""></a>
+            <a href="javascript:void(0);" class="pay"><img src="assets/img/icons/pay/BankTransferRUB.png" alt=""></a>
+            <a href="javascript:void(0);" class="pay"><img src="assets/img/icons/pay/pizv.png" alt=""></a>
+            <a href="javascript:void(0);" class="pay"><img src="assets/img/icons/pay/PsbRetailRUB.png" alt=""></a>
+            <a href="javascript:void(0);" class="pay"><img src="assets/img/icons/pay/QBankRUB.png" alt=""></a>
+            <a href="javascript:void(0);" class="pay"><img src="assets/img/icons/pay/SberOnlineRUB.png" alt=""></a>
+            <a href="javascript:void(0);" class="pay"><img src="assets/img/icons/pay/UnistreamRUB.png" alt=""></a>
+            <a href="javascript:void(0);" class="pay"><img src="assets/img/icons/pay/ctru.png" alt=""></a>
+            <a href="javascript:void(0);" class="pay"><img src="assets/img/icons/pay/qwek.png" alt=""></a>
+            <a href="javascript:void(0);" class="pay"><img src="assets/img/icons/pay/ym.png" alt=""></a>
+        </div>
+        </div>
+    </div>
+    
+    </div>
+    </div>
+    <!--Модальное окно выбор города начало-->
+    <div class="reveal" id="city-popup" data-reveal>
+        <h2>Ваш город Москва, верно?</h2>
+        <div class="large-10 medium-10 small-10 columns">
+            <input class="header__search input-group-field" type="search" placeholder="Поиск города..">
+            <div class="city-modal-wrap">
+            <div class="large-3 medium-3 small-10 columns">
+                <ul class="no-bullet">
+                    <li><a href="">Москва</a></li>
+                    <li><a href="">Алупка</a></li>
+                    <li><a href="">Санкт-питербург</a></li>
+                    <li><a href="">Самара</a></li>
+                    <li><a href="">Владивосток</a></li>
+                    <li><a href="">Кострома</a></li>
+                    <li><a href="">Чебоксары</a></li>
+                    <li><a href="">Энгельс</a></li>
+                </ul>
+            </div>
+            <div class="large-3 medium-3 small-10 columns">
+                <ul class="no-bullet">
+                    <li><a href="">Сызрань</a></li>
+                    <li><a href="">Саратов</a></li>
+                    <li><a href="">Вологда</a></li>
+                    <li><a href="">Сочи</a></li>
+                    <li><a href="">Москва</a></li>
+                    <li><a href="">Алупка</a></li>
+                    <li><a href="">Санкт-питербург</a></li>
+                    <li><a href="">Самара</a></li>
+                </ul>
+            </div>
+            <div class="large-3 medium-3 small-10 columns">
+                <ul class="no-bullet">
+                    <li><a href="">Владивосток</a></li>
+                    <li><a href="">Кострома</a></li>
+                    <li><a href="">Чебоксары</a></li>
+                    <li><a href="">Энгельс</a></li>
+                    <li><a href="">Сызрань</a></li>
+                    <li><a href="">Саратов</a></li>
+                    <li><a href="">Вологда</a></li>
+                    <li><a href="">Сочи</a></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    
+    <!--Модальное окно выбор города конец-->
+    <!--Модальное окно при клике на корзину начало-->
+    <div class="reveal" id="cart-popup" data-reveal>
+    <div class="row">
+      <h2>Товар добавлен в корзину</h2>
+      <div class="large-5 medium-4 small-10 columns">
+        <div class="thumbnails __line-view">
+            <img src="assets/img/productspage/1.png" alt="">
+        </div>
+        <!--Класс: ms-sale-act для акций-->
+        <!--<span class="ms-sale-act">Акция</span>-->
+        <!--Класс: ms-sale-per для скидок-->
+        <!-- <span class="ms-sale-per">30%</span> -->
+    </div>
+     <div class="large-5 medium-6 small-10 columns">
+         <h2>Матрас DreamExpert Base</h2>
+         <ul class="no-bullet">
+             <li>Жесткость: средняя</li>
+             <li>Тип: беспружинный</li>
+             <li>Высота: 22см</li>
+         </ul>
+         <span>Итоговая стоимость:<h3 class="item-price-popup">10 500</h3>руб</span>
+     </div>
+    </div>
+    <div class="row">
+      <div class="large-5 medium-5 small-10 popup-button-wrap columns">
+        <button class="button -light">Продолжить покупки</button>
+     </div>
+     <div class="large-5 medium-5 small-10 popup-button-wrap columns text-right">
+       <button class="button">Оформить заказ</button>
+     </div>
+    </div>
+    <div class="row">
+    
+          <h2>Сопутствующие товары</h2>
+          <div class="large-5 medium-5 small-10 columns something-with-border end __box-view">
+              <div class="orbit" role="region" aria-label="cart in product" data-orbit data-auto-play="0" >
+                  <ul class="orbit-container">
+                      <li class="is-active orbit-slide">
+                          <div class="thumbnails">
+                              <img src="assets/img/productspage/1.png" alt="">
+                          </div>
+                          <h5>Матрас DreamExpert Base</h5>
+                          <input id="check-product9999" type="checkbox"><label for="check-product1">В сравнение</label>
+                          <!--Класс: ms-sale-act для акций-->
+                          <!--<span class="ms-sale-act">Акция</span>-->
+                          <!--Класс: ms-sale-per для скидок-->
+                          <!-- <span class="ms-sale-per">30%</span> -->
+                      </li>
+                      <li class="orbit-slide">
+                          <h5>Матрас DreamExpert Base</h5>
+                          <div>
+                              <input id="check-product1" type="checkbox"><label for="check-product1">В сравнение</label>
+                          </div>
+                          <span class="ms-comments">Отзывы: <span class="ms-comments__counter">11</span></span>
+                          <ul class="no-bullet">
+                              <li>Жесткость: средняя</li>
+                              <li>Тип: беспружинный</li>
+                              <li>Высота: 22см</li>
+                              <li>Макс вес на 1 место: 130кг</li>
+                              <li>Анатомичность: средняя</li>
+                          </ul>
+                      </li>
+                  </ul>
+                   <div class="paddinger">
+                       <select>
+                           <option value="150x160">150 х 160 см</option>
+                           <option value="140x160">140 х 160 см</option>
+                           <option value="150x160">150 х 160 см</option>
+                           <option value="150x160">150 х 160 см</option>
+                       </select>
+                       <button class="large-10 medium-10 small-10 columns total-product-price button">25 245 руб <span class="ms-separator">•</span>В корзину</button>
+                       <a href="javascript:void(0);" class="suggested-product__link top" data-toggle="getcall">Заказать по телефону
+                       </a>
+                       <div class="ms-custom-modal ms-custom-modal-product-top is-hidden" id="getcall" data-toggler="is-hidden">
+                           <form>
+                               <label><span>Введите ваш телефон и имя</span>
+                                   <input type="text">
+                               </label>
+                               <button class="book-button large-10 medium-10 small-10 columns button">25 245 руб • Позвонить</button>
+                           </form>
+                       </div>
+                       <nav class="orbit-bullets">
+                           <button class="is-active ms-first-prodpage" data-slide="0"><span class="show-for-sr">First slide</span></button>
+                           <button class="ms-second-prodpage" data-slide="1"><span class="show-for-sr">Second slide</span></button>
+                       </nav>
+                   </div>
+              </div>
+          </div>
+          <div class="large-5 medium-5 small-10 columns something-with-border end __box-view">
+              <div class="orbit" role="region" aria-label="cart in product" data-orbit data-auto-play="0" >
+                  <ul class="orbit-container">
+                      <li class="is-active orbit-slide">
+                          <div class="thumbnails">
+                              <img src="assets/img/productspage/1.png" alt="">
+                          </div>
+                          <h5>Матрас DreamExpert Base</h5>
+                          <input id="check-product9999" type="checkbox"><label for="check-product1">В сравнение</label>
+                          <!--Класс: ms-sale-act для акций-->
+                          <!--<span class="ms-sale-act">Акция</span>-->
+                          <!--Класс: ms-sale-per для скидок-->
+                          <!-- <span class="ms-sale-per">30%</span> -->
+                      </li>
+                      <li class="orbit-slide">
+                          <h5>Матрас DreamExpert Base</h5>
+                          <div>
+                              <input id="check-product1" type="checkbox"><label for="check-product1">В сравнение</label>
+                          </div>
+                          <span class="ms-comments">Отзывы: <span class="ms-comments__counter">11</span></span>
+                          <ul class="no-bullet">
+                              <li>Жесткость: средняя</li>
+                              <li>Тип: беспружинный</li>
+                              <li>Высота: 22см</li>
+                              <li>Макс вес на 1 место: 130кг</li>
+                              <li>Анатомичность: средняя</li>
+                          </ul>
+                      </li>
+                  </ul>
+                   <div class="paddinger">
+                       <select>
+                           <option value="150x160">150 х 160 см</option>
+                           <option value="140x160">140 х 160 см</option>
+                           <option value="150x160">150 х 160 см</option>
+                           <option value="150x160">150 х 160 см</option>
+                       </select>
+                       <button class="large-10 medium-10 small-10 columns total-product-price button">25 245 руб <span class="ms-separator">•</span>В корзину</button>
+                       <a href="javascript:void(0);" class="suggested-product__link top" data-toggle="getcall">Заказать по телефону
+                       </a>
+                       <div class="ms-custom-modal ms-custom-modal-product-top is-hidden" id="getcall" data-toggler="is-hidden">
+                           <form>
+                               <label><span>Введите ваш телефон и имя</span>
+                                   <input type="text">
+                               </label>
+                               <button class="book-button large-10 medium-10 small-10 columns button">25 245 руб • Позвонить</button>
+                           </form>
+                       </div>
+                       <nav class="orbit-bullets">
+                           <button class="is-active ms-first-prodpage" data-slide="0"><span class="show-for-sr">First slide</span></button>
+                           <button class="ms-second-prodpage" data-slide="1"><span class="show-for-sr">Second slide</span></button>
+                       </nav>
+                   </div>
+              </div>
+          </div>
+          <button class="close-button" data-close aria-label="Close modal" type="button">
+              <span aria-hidden="true">&times;</span>
+          </button>
+    </div>
+    </div>
+    
+    <!--Модальное окно при клике на корзину конец-->
+    
+    
+    
+    
+    
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
