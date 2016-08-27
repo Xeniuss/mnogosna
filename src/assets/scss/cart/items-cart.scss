@@ -1,0 +1,238 @@
+.product-in-cart {
+  padding: 30px 0;
+  border-top: 1px solid $base-border-color;
+  img {
+    display: block;
+    margin: auto;
+    @include breakpoint(small down) {
+      padding-top: 70px;
+    }
+  }
+  @include breakpoint(small down) {
+    padding: 0;
+  }
+}
+
+.item-name {
+  padding-top: 40px;
+  span {
+    color: $base-lite-font-color;
+  }
+  @include breakpoint(small down) {
+    padding-left: 5px;
+  }
+}
+.cards__bk {
+  .breadcrumbs {
+    padding-left: 23px;
+  }
+}
+.item-price {
+  padding-top: 60px;
+  text-align: center;
+  span {
+    color: $base-lite-font-color;
+  }
+}
+
+.price-form {
+  @include breakpoint(small down) {
+    position: relative;
+    right: -20px;
+  }
+  padding-top: 30px;
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  .button {
+    margin: 0;
+    width: 41px;
+    height: 45px;
+    background: $base-lite-color;
+    color: #000;
+    margin-top: -2px;
+    border: 1px solid $base-border-color;
+    padding: 0;
+  }
+  input[type=number] {
+    text-align: center;
+    display: inline-block;
+    margin: 0;
+    width: 80px;
+    height: 45px;
+    margin-right: -5px;
+    margin-left: -5px;
+    border: 1px solid $base-border-color;
+    border-right: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    @include breakpoint(small down) {
+      border: 1px solid $base-border-color;
+      border-top: none;
+    }
+    @include breakpoint(small down) {
+      width: 41px;
+      margin: 0;
+    }
+  }
+  select {
+    width: 160px;
+    margin-top: 25px;
+    border: 1px solid $base-border-color;
+    color: #717063;
+    background-image: url('../img/icons/arrow.svg');
+    @include breakpoint(small down) {
+      right: 80px;
+      bottom: -15px;
+      position: absolute;
+    }
+    @include breakpoint(570px down) {
+      right: 60px;
+      bottom: -15px;
+      position: absolute;
+    }
+  }
+}
+
+.total-price {
+  padding-top: 60px;
+  position: relative;
+  h3 {
+    font-weight: 500;
+    color: $accent-color;
+
+    @include breakpoint(small down) {
+      margin-left: 20%;
+      margin-top: -40px;
+    }
+    @include breakpoint(640px down) {
+      margin-left: 31%;
+    }
+  }
+
+}
+
+.ms-delete {
+  position: absolute;
+  right: 50px;
+  top: 70%;
+  @include breakpoint(medium down) {
+    right: 20px;
+  }
+  @include breakpoint(small down) {
+    right: 70px;
+    top: -45px;
+  }
+  @include breakpoint(550px down) {
+    right: 50px;
+  }
+  @include breakpoint(480px down) {
+    right: 40px;
+  }
+}
+
+.ms-clear-cart {
+  margin-top: 16px;
+  padding: 10px;
+  @include breakpoint(1024px down) {
+    margin-top: 16px;
+    padding: 10px;
+  }
+  @include breakpoint(small down) {
+    width: 100%;
+  }
+}
+
+.cart-total {
+  text-transform: uppercase;
+  color: $base-lite-font-color;
+  span {
+    font-size: 18px;
+    font-weight: 500;
+    width: 100%;
+    display: block;
+    text-align: right;
+    padding-right: 100px;
+    margin-bottom: 10px;
+    @include breakpoint(medium down) {
+      padding-right: 20px;
+
+    }
+  }
+}
+
+span.cart-total-price, span.cart-total-number, span.cart-total-discount {
+  text-align: center;
+  text-transform: none;
+}
+
+span.cart-total-price {
+  color: $accent-color;
+}
+
+label[for=fiz-man] {
+  margin-right: 160px;
+  @include breakpoint(medium down) {
+    margin-right: 50px;
+  }
+  @include breakpoint(small down) {
+    margin-right: 5px;
+  }
+}
+
+label[for=fiz-man], label[for=ur-man] {
+  @include breakpoint(small down) {
+    font-size: 0.65em;
+  }
+}
+
+.personal-data h3 {
+  color: $base-lite-font-color;
+  text-transform: uppercase;
+}
+
+.personal-data .columns {
+  padding: 10px;
+}
+
+.personal-data {
+  padding-top: 50px;
+}
+
+.order-it {
+  padding-top: 50px;
+  border-left: 1px solid $base-border-color;
+  padding-left: 20px;
+  @include breakpoint(small down) {
+    border-left: none;
+  }
+
+  legend {
+    color: $base-lite-font-color;
+    margin: 20px 0;
+  }
+  h3 {
+    color: $base-lite-font-color;
+    text-transform: uppercase;
+  }
+  .button {
+    padding: 15px;
+  }
+}
+
+label[for=cash-pay] {
+  margin-top: 15px;
+}
+
+input#cash-pay {
+  margin-top: 20px;
+  float: left;
+  display: block;
+}
+
+.order-form {
+  border-top: 1px solid $base-border-color;
+}

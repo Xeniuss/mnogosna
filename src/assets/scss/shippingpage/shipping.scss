@@ -1,0 +1,66 @@
+.ms-shipping-header {
+  border: 1px solid $base-border-color;
+  padding: 4.5px;
+  border-left:none;
+  margin-bottom:35px;
+  border-top: none;
+  &.-inside {
+    margin-left: -2.25%;
+    width: 104.5%;
+    padding: 10px;
+    border-right:none;
+  }
+  @include breakpoint(small down) {
+    font-size: 0.8em;
+  }
+  }
+.ms-shipping-inputgroup {
+  margin-bottom: 50px;
+  h3 {
+    font-weight: 400;
+    text-align: center;
+    color: #a6a6a6;
+    @include breakpoint(small down) {
+      margin-top: 20px;
+    }
+    }
+}
+.ms-shipping-inputgroup__maker {
+  border: 1px solid $base-border-color;
+  background: $base-bg-color;
+  padding: 20px;
+  border-right:none;
+}
+.ms-shipping-inputgroup__city {
+  background: $base-bg-color;
+  padding: 20px;
+  border: 1px solid $base-border-color;
+}
+.ms-shipping-content {
+  .no-bullet {
+    padding-left: 20px;
+    padding-top: 25px;
+  }
+  h3 {
+    font-size: 1.7em;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  iframe {
+    @include breakpoint(small down) {
+      width: 130%;
+      margin-left: -15%;
+      height: 300px;
+    }
+  }
+  @include breakpoint(small down) {
+    border:none;
+  }
+  }
+.location-list {
+  color: $base-lite-font-color;
+  span {
+    color: #444;
+    font-weight: 500;
+  }
+}

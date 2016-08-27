@@ -1,0 +1,133 @@
+.footer {
+  background: $base-font-color;
+  color: $base-lite-color;
+  padding: 50px 50px 10px 50px;
+  margin-top: 20px;
+  h5 {
+    text-transform: uppercase;
+    color: #c7c7c7;
+    font-weight: 500;
+    font-size: 0.9em;
+    margin-bottom: 30px;
+  }
+  li {
+    font-weight: 500;
+    line-height: 2;
+  }
+  @include breakpoint(medium down) {
+    padding: 38px;
+    width: 100vw;
+    display: block;
+  }
+  @include breakpoint(small down) {
+    padding: 20px;
+    width: 100vw;
+    display: block;
+  }
+}
+.city-modal-wrap {
+  max-height: 200px;
+  overflow-y: scroll;
+  @include breakpoint(small down) {
+   max-height: none;
+  }
+}
+.social {
+  margin: 10px;
+  border: 1px solid #c7c7c7;
+  text-align: center;
+  padding-top: 5px;
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  @include breakpoint(1024px down) {
+    margin: 5px;
+  }
+  &:hover {
+    background: #c7c7c7;
+    color: $base-font-color;
+  }
+}
+
+.pay {
+  margin: 12px 7px;
+  @include breakpoint(medium down) {
+    display: inline-block;
+    margin: 7px;
+  }
+  @include breakpoint(small down) {
+    display: inline-block;
+    margin: 12px;
+  }
+}
+
+.footer-sectiont {
+  border-left: 1px solid #737373;
+  padding-left: 30px;
+  margin-bottom: 20px;
+  @include breakpoint(medium down) {
+    padding-left: 0;
+    margin-bottom: 30px;
+    border: none;
+  }
+}
+
+.ms-social-block {
+  @include breakpoint(small down) {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #737373;
+  }
+}
+
+.ms-copyright {
+  font-weight: 500;
+  color: $base-lite-color;
+}
+
+.ms-footer__seotext {
+  padding-top: 25px;
+  display: block;
+  color: #c7c7c7;
+}
+
+.ms-footer__number {
+  padding-top: 20px;
+  display: block;
+  color: #c7c7c7;
+}
+
+.footer a {
+  color: #c7c7c7;
+}
+#cart-popup {
+  .orbit-container {
+    height: 260px !important;
+    @include breakpoint(medium down) {
+      height: 290px !important;
+    }
+  }
+  .popup-button-wrap {
+    @include breakpoint(small down) {
+      text-align: center;
+    }
+  }
+  .button {
+    &.-light {
+      text-transform: none;
+    }
+  }
+}
+.item-price-popup {
+  display: inline;
+  padding: 0 5px;
+}
+
+.footer__text-link {
+  &:hover {
+    text-decoration: underline;
+  }
+}

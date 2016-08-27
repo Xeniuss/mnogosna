@@ -1,0 +1,36 @@
+// Как выбрать
+.ms-how {
+  position: relative;
+  height: 250px;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.ms-how__header {
+  color: $base-lite-color;
+  position: absolute;
+  line-height: 1;
+  left: 32px;
+  top: 38px;
+  font-size: 1.75em;
+  &.-textblue {
+    color: #526f7c;
+  }
+}
+.ms-how__text {
+  color: $base-lite-color;
+  font-weight: 500;
+  font-size: 0.9em;
+  line-height: 1.2;
+  display: block;
+  width: 150px;
+  position: absolute;
+  bottom: 90px;
+  right: 25px;
+}
+.ms-how__link {
+  color: #5a4a3e;
+  font-weight: 500;
+  position: absolute;
+  bottom: 12px;
+  right: 20px;
+}

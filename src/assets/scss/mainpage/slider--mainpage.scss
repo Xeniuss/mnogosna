@@ -1,0 +1,70 @@
+.ms-carousel {
+  .orbit-bullets {
+    margin-top: -50px;
+    margin-bottom: 50px;
+    button{
+      background: none;
+      border:1px solid #c4c1b3;
+      &.is-active {
+        background: #c4c1b3; 
+      }
+    }
+  }
+  .orbit-container {
+    @include breakpoint(small down) {
+      height: 400px !important;
+    }
+  }
+}
+
+.ms-carousel__slide {
+  padding: 65px 95px;
+  background-color: #eeede9;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+   h1 {
+     text-transform: none;
+     font-size: 3.2em;
+     font-weight: 300;
+     @include breakpoint(medium down) {
+       font-size: 2.6em;
+     }
+     @include breakpoint(small down) {
+       font-size: 1.6em;
+     }
+   }
+  @include breakpoint(medium down) {
+    height: 470px;
+    padding: 50px;
+  }
+  @include breakpoint(small down) {
+    height: 400px;
+    padding:  200px 15px 20px 15px;
+    -webkit-background-size: 120%;
+    background-size: 120%;
+    background-position: 100% -10%;
+  }
+}
+
+.button{
+  &.-blackrounded {
+    margin-top: 10px;
+    background: #333;
+    padding: 12px 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    .fa {
+      margin-right: 12px;
+    }
+    @include breakpoint(small down) {
+      margin:auto;
+      display: block;
+      width: 150px;
+    }
+  }
+}
+
+

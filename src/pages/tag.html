@@ -1,0 +1,56 @@
+    {{> header}}
+    {{> mob-sidebar}}
+
+    <div class="row hide-for-small-only">
+    <div class="large-10 medium-10 small-10 columns breadcramps">
+        <nav aria-label="You are here:" role="navigation">
+            <ul class="breadcrumbs">
+                <li><a href="javascript:void(0);">Блог</a></li>
+                <li class="disabled">Полезные советы</li>
+            </ul>
+        </nav>
+    </div>
+</div>
+    <div class="row ms-blog__page-header">
+        <h1>Какой-то тег</h1>
+    </div>
+    <div class="row">
+        <div class="large-8 medium-10 small-10 columns float-right">
+            <form action="">
+                <button class="button blog-page-counter-wrap active">Новости:<span class="blog-page-counter">12</span></button>
+                <button class="button blog-page-counter-wrap">Полезные советы:<span class="blog-page-counter">14</span></button>
+                <button class="button blog-page-counter-wrap">Акции:<span class="blog-page-counter">3</span></button>
+            </form>
+        </div>
+    </div>
+<div class="row">
+    <div class="ms-top-border-fix show-for-large">
+        {{> sidebar}}
+    </div>
+
+    <!--====================================================================================================================-->
+    {{#repeat 4}}
+    <div class="large-8 medium-10 small-10 columns float-right something-with-border ms-blog__post">
+      <h2>Сертификаты на продукцию</h2>
+        <span class="blog-post-tag"><a href="javascript:void(0);">Полезные советы</a></span> <span class="blog-post-tag"><a href="javascript:void(0);">Новости</a></span>
+        <p>В середине января поисковый гигант объявил о сворачивании программы Glass Explorer и прекращении продаж очков, стоивших $1500. Причиной такого решения отчасти стали вопросы, связанные с нарушением прав на неприкосновенность частной жизни путём возможного использования гаджета для скрытой съемки.
+После этого в интернете прошла волна слухов о том, что проект Glass может быть полностью закрыт.</p>
+        <a href="javascript:void(0);" class="float-right hide-for-small-only more">Подробнее</a>
+    </div>
+    {{/ repeat}}
+
+      <div class="large-8 medium-10 small-10 columns ms-blog-pagination float-right">
+          <ul class="pagination" role="navigation" aria-label="Pagination">
+              <li class="pagination-previous"><a href="javascript:void(0);" aria-label="Prev page">Назад</a></li>
+              <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+              <li><a class="pagination__link" href="javascript:void(0);" aria-label="Page 2">2</a></li>
+              <li><a class="pagination__link hide-for-small-only" href="javascript:void(0);" aria-label="Page 3">3</a></li>
+              <li><a class="pagination__link hide-for-small-only" href="javascript:void(0);" aria-label="Page 4">4</a></li>
+              <li class="ellipsis" aria-hidden="true"></li>
+              <li><a class="pagination__link hide-for-small-only" href="javascript:void(0);" aria-label="Page 12">12</a></li>
+              <li><a class="pagination__link hide-for-small-only" href="javascript:void(0);" aria-label="Page 13">13</a></li>
+              <li class="pagination-next"><a href="javascript:void(0);" aria-label="Next page">Далее</a></li>
+          </ul>
+      </div>
+    </div>
+{{> footer}}

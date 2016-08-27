@@ -1,0 +1,246 @@
+@import 'psidebar--products';
+
+.ms-product-intro {
+  text-align: center;
+  border-top: 1px solid $base-border-color;
+  padding-top: 10px;
+  padding-bottom: 35px;
+  h1 {
+    font-size: 24px;
+    text-transform: none;
+  }
+  p {
+    color: #717063;
+  }
+  @include breakpoint(small down) {
+    padding-bottom: 10px;
+    padding-top: 15px;
+    border-bottom: 1px solid $base-border-color;
+  }
+}
+.list-of-option.__line-view {
+  padding-top: 10px;
+  select {
+    margin-top: 10px;
+  }
+}
+.total-product-price.button {
+  color: $base-lite-color;
+  @include breakpoint(small down) {
+    padding: 0.85em 1em;
+  }
+}
+.thumbnails.__line-view {
+  margin-top: 40px;
+}
+.about-product__line-view {
+  @include breakpoint(small down) {
+padding-left: 40px;
+  }
+}
+.products-wrap {
+  padding-left: 12px;
+  @include breakpoint(large down) {
+    padding-left: 4%;
+  }
+  .suggested-product {
+    margin: 12px;
+    position: relative;
+    padding: 0;
+    height: auto;
+    &.__line-view {
+      padding: 20px 0;
+      @include breakpoint(medium down) {
+        width: 100%;
+      }
+      @include breakpoint(small down) {
+        display: inline-block;
+        height: auto;
+        margin: 10px 0;
+      }
+    }
+    .orbit-container {
+      .orbit-slide {
+        padding: 20px;
+      }
+    }
+    .paddinger {
+      display: inline-block;
+      padding: 0 20px;
+    }
+    img {
+      display: block;
+      margin: auto;
+    }
+    @include breakpoint(medium down) {
+      width: 45%;
+    }
+    @include breakpoint(small down) {
+      width: 100%;
+      height: 475px;
+      margin: 10px 0;
+    }
+
+  }
+  @include breakpoint(small down) {
+    padding: 0;
+  }
+  h5 {
+    font-weight: 500;
+    @include breakpoint(small down) {
+      font-size: 1.4em;
+    }
+  }
+}
+
+.ms-showmore {
+  width: 100%;
+}
+
+.ms-compress-wrap {
+  padding: 0 38px 0 25px;
+  @include breakpoint(small down) {
+    padding: 0;
+  }
+}
+
+.prodtext {
+  padding: 30px;
+}
+
+a.large-how-4, a.large-how-3 {
+  padding: 25px;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 395px;
+  position: relative;
+  @include breakpoint(medium down) {
+    padding: 20px;
+    background-position: 50% 100%;
+  }
+  @include breakpoint(small down) {
+    padding: 20px;
+    height: 220px;
+    background-position: 100% 80%;
+    margin-bottom: 25px;
+  }
+  h5, h4 {
+    position: absolute;
+    top: 50px;
+    left: 40px;
+    width: 288px;
+    color: #787c74;
+    @include breakpoint(medium down) {
+      width: 230px;
+    }
+    @include breakpoint(small down) {
+      top: 10px;
+      left: 20px;
+      font-size: 1.2em;
+
+    }
+  }
+  .ms-show-more {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: #787c74;
+    @include breakpoint(small down) {
+      bottom: 10px;
+    }
+  }
+  .ms-how-desc {
+    position: absolute;
+    top: 130px;
+    left: 40px;
+    width: 170px;
+    color: #787c74;
+    @include breakpoint(small down) {
+      top: 50px;
+      left: 20px;
+      width: 200px;
+      font-size: 0.8em;
+    }
+
+  }
+}
+
+.product-tip {
+  text-align: center;
+  max-width: 560px !important;
+  -webkit-box-shadow: 0px 10px 45px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 10px 45px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 10px 45px 0px rgba(0, 0, 0, 0.2);
+  padding-right: 10px;
+  margin-bottom: -50px;
+  textarea {
+    margin: 5px 10px 5px 0;
+  }
+
+}
+
+.has-tip.suggested-product__link {
+  font-weight: 300;
+  border-bottom: none;
+  cursor: pointer;
+}
+
+.suggested-product__link {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  color: $base-lite-font-color;
+}
+
+.ms-second-prodpage:not(.is-active)::after {
+ position: absolute;
+ content: url(../img/arrow-button2.png);
+ margin-left: 2rem;
+ top: 7px;
+}
+
+.ms-first-prodpage:not(.is-active)::after {
+
+ position: absolute;
+ content: url(../img/arrow-button.png);
+ margin-left: -6rem;
+ top: 7px;
+}
+
+.ms-filter__accordion {
+  color: #676767;
+  text-align: center;
+  width: 100px;
+  margin: 0 auto;
+}
+
+.ms-mobile-header {
+  font-weight: 300;
+  padding: 0 20px;
+}
+
+.ms-ipad-fix {
+  .filter-column:nth-child(1) {
+    .is-accordion-submenu-parent[aria-expanded='false']{
+      a {
+        border-left:none;
+      }
+    }
+  }
+  label {
+    @include breakpoint(medium down) {
+      font-size: 0.8em;
+    }
+    @include breakpoint(small down) {
+      font-size: 0.9em;
+    }
+  }
+}
+
+#getcall {
+  width: 300px;
+input{
+  margin-left: 0px;
+}
+}

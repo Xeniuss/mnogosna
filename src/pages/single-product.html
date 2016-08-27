@@ -1,0 +1,711 @@
+<!-- Делаем обертку single-product__wrapper-fix-width всей страницы чтобы задать правила для ширины -->
+<div class="single-product__wrapper-fix-width">
+    {{> header}}
+    {{> mob-sidebar}}
+
+    <div class="row hide-for-small-only ms-breadcrumbs-with-back">
+        <a class="large-2 medium-4 small-2 columns ms-back-to-prod large-back-to end" href="javascript:void(0);">
+            Назад к товарам
+        </a>
+        <div class="large-8 medium-6 small-8 columns ms-breadcrumbs">
+            <nav aria-label="You are here:" role="navigation">
+                <ul class="breadcrumbs">
+                    <li><a href="javascript:void(0);">Матрасы</a></li>
+                    <li><a href="javascript:void(0);">Беспружинные</a></li>
+                    <li class="disabled">Из кокоса</li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="page-border single-product-wrap">
+        <div class="hide-for-large">
+            <div class="large-5 medium-3 small-5 columns product-seria hide-for-small-only">
+                <a href="javascript:void(0);">Эконом серия</a>
+            </div>
+            <h2 class="large-5 medium-4 small-10 columns text-center">Кровать Benartti Alegra</h2>
+            <div class="large-5 medium-3 small-5 columns product-maker hide-for-small-only">
+                <img src="assets/img/logos/manufacturer-dreamline.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="large-6 medium-5 small-10 columns product-photos">
+                <div class="selectors">
+                    <a
+                            data-zoom-id="Zoom-1"
+                            href="assets/img/single-product/product1.png"
+                            data-image="assets/img/single-product/product1.png"
+                    >
+                        <img srcset="assets/img/single-product/product1.png"/>
+                    </a>
+                    <a
+                            data-zoom-id="Zoom-1"
+                            href="assets/img/single-product/product2.png"
+                            data-image="assets/img/single-product/product2.png"
+                    >
+                        <img srcset="assets/img/single-product/product2.png"/>
+                    </a>
+                    <a
+                            data-zoom-id="Zoom-1"
+                            href="assets/img/single-product/product3.png"
+                            data-image="assets/img/single-product/product3.png"
+                    >
+                        <img srcset="assets/img/single-product/product3.png"/>
+                    </a>
+                    <a
+                            data-zoom-id="Zoom-1"
+                            href="assets/img/single-product/product4.png"
+                            data-image="assets/img/single-product/product4.png"
+                    >
+                        <img srcset="assets/img/single-product/product4.png"/>
+                    </a>
+                </div>
+                <div class="mz-wrap">
+                    <a id="Zoom-1" class="MagicZoom" title="Продукт"
+                       href="assets/img/single-product/product1.png"
+                    >
+                        <img src="assets/img/single-product/product1.png" alt=""/>
+                    </a>
+                </div>
+            </div>
+            <div class="large-4 medium-5 small-10 columns product-settings">
+                <div class="show-for-large">
+                    <h2>Кровать Benartti Alegra</h2>
+                    <h2 class="sub-header -single-product">АРТ: 141555</h2>
+                    <div class="large-5 medium-5 small-5 columns product-seria">
+                        <a href="javascript:void(0);">Эконом серия</a>
+                    </div>
+                    <div class="large-5 medium-5 small-5 columns product-maker">
+                        <img src="assets/img/logos/manufacturer-dreamline.png" alt="">
+                    </div>
+                </div>
+                <div class="ms-product-setting-tabs-wrap">
+                    <ul class="tabs" data-tabs id="product-settings-tabs">
+                        <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Описание</a></li>
+                        <li class="tabs-title"><a href="#panel2">Слои матраса</a></li>
+                        <li class="tabs-title"><a href="#panel3">Оплата</a></li>
+                    </ul>
+                </div>
+                <div class="tabs-content" data-tabs-content="product-settings-tabs">
+                    <div class="tabs-panel is-active" id="panel1">
+                        <ul class="no-bullet">
+                            <li class="underlined"><span class="option">Материал каркаса:<span
+                                    class="ov-separator"></span></span>
+                                <span class="option__value"> ЛДСП</span></li>
+                            <li class="underlined"><span class="option">Комплектация кровати:<span
+                                    class="ov-separator"></span></span>
+                                <span class="option__value"> жесткое основание</span></li>
+                            <li class="underlined"><span class="option">Высота боковины:<span
+                                    class="ov-separator"></span></span>
+                                <span class="option__value"> 38 см</span></li>
+                            <li class="underlined"><span class="option">Высота изголовья:<span
+                                    class="ov-separator"></span></span>
+                                <span class="option__value"> 100 см</span></li>
+                            <li class="underlined"><span class="option">Высота изножья:<span
+                                    class="ov-separator"></span></span>
+                                <span class="option__value"> 38 см</span></li>
+                            <li class="underlined"><span class="option">Гарантия:<span
+                                    class="ov-separator"></span></span>
+                                <span class="option__value"> 18 месяцев</span></li>
+                            <li class="underlined"><span class="option">Страна-производитель:<span
+                                    class="ov-separator"></span></span>
+                                <span class="option__value"> Россия</span></li>
+                        </ul>
+                    </div>
+                    <div class="tabs-panel" id="panel2">
+                        <div style="background-image: url(/assets/img/layers.png);" class="ms-layer-desc -compn">
+                          <span class="bs-layer-desc__arrow1 has-tip" data-tooltip aria-haspopup="true"
+                                data-disable-hover="false"
+                                tabindex="1" title="Fancy word for a beetle.">Волнистый поролон</span>
+                          <span class="bs-layer-desc__arrow2 has-tip" data-tooltip aria-haspopup="true"
+                                data-disable-hover="false"
+                                tabindex="1" title="Fancy word for a beetle.">Плотный поролон</span>
+                          <span class="bs-layer-desc__arrow3 has-tip" data-tooltip aria-haspopup="true"
+                                data-disable-hover="false"
+                                tabindex="1" title="Fancy word for a beetle.">Мягкий поролон</span>
+
+                        </div>
+                    </div>
+                    <div class="tabs-panel" id="panel3">
+                        <p>Suspendisse dictum feugiat nisl ut dapibus. Vivamus hendrerit arcu sed erat molestie
+                            vehicula. Ut in nulla enim.
+                            Phasellus molestie magna non est bibendum non venenatis nisl tempor. Sed auctor neque eu
+                            tellus rhoncus ut eleifend
+                            nibh porttitor.</p>
+                    </div>
+                </div>
+                <div class="ms-prod-upgrade"><input id="checkbox-matr" type="checkbox"><label for="checkbox-matr"><span>Матрас: </span><a
+                        href="javascript:void(0);" data-open="matra-popup">Dream Lux SSH Non-Stress
+                    <div class="ms-custom-modal is-hidden" id="getcall-header" data-toggler="is-hidden">
+                        <p>Вам перезвонят, в течении 15 минут</p>
+                        <small>На самом деле нет</small>
+                    </div>
+                </a> + 2 540 руб</label>
+                </div>
+                <div class="large-5 medium-10 small-10 columns">
+                    <select class="select-left-al">
+                        <!-- Можно использовать https://select2.github.io/ , но понятное дело не везде будет работать-->
+                        <option value="bezh">Бежевый</option>
+                        <option value="bezh">Бежевый</option>
+                        <option value="bezh">Бежевый</option>
+                        <option value="bezh">Бежевый</option>
+                    </select>
+                    <select class="select-left-al">
+                        <option value="150x160"><span class="choose-size">Размер: </span>150 х 160 см</option>
+                        <option value="140x160"><span class="choose-size">Размер: </span>140 х 160 см</option>
+                        <option value="150x160"><span class="choose-size">Размер: </span>150 х 160 см</option>
+                        <option value="150x160"><span class="choose-size">Размер: </span>150 х 160 см</option>
+                    </select>
+                </div>
+                <div class="large-5 medium-19 small-10 columns">
+                    <div class="book-button large-10 medium-10 small-10 columns button -light ms-toggle-trigger"
+                         data-toggle="getcall"> Заказать
+                        по телефону
+                        <div class="ms-custom-modal is-hidden" id="getcall" data-toggler="is-hidden">
+                            <form>
+                                <label><span>Введите ваш телефон и имя</span>
+                                    <input type="text">
+                                </label>
+                                <button class="book-button large-10 medium-10 small-10 columns button">25 245 руб •
+                                    Позвонить
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <a class="book-button large-10 medium-10 small-10 columns button">12 540 руб • В корзину</a>
+                </div>
+            </div>
+
+            <div class="large-6 medium-7 small-10 columns product-description hide-for-small-only">
+                <ul class="tabs" data-tabs id="description-tabs">
+                    <li class="tabs-title is-active"><a href="#panel21" aria-selected="true">Подробнее</a></li>
+                    <li class="tabs-title"><a href="#panel22">Доставка и оплата</a></li>
+                    <li class="tabs-title"><a href="#panel23">Отзывы</a></li>
+                </ul>
+                <div class="tabs-content" data-tabs-content="description-tabs">
+                    <div class="tabs-panel is-active" id="panel21">
+                        <h3>Матрас Перрино Медиформ</h3>
+                        <p>Матрас Perrino Медиформ — средне–жесткий, двусторонний, ортопедический матрас. Съемный чехол
+                            матраса выполнен из
+                            хлопкового трикотажа с антистрессовой пропиткой и системой вентиляции. Основанием матраса
+                            является независимый
+                            пружинный блок TFK (500 пружин на спальное место). C двух сторон слои: латексированной
+                            кокосовой койры (1 см) и
+                            ячеистого эрголатекса (3 см). </p>
+
+                        <h3>Спите, чтобы ощутить бодрость утром </h3>
+                        <p> Сон — важнейшая функция любого организма. Полноценный отдых необходим любому человеку.
+                            Правильно подобранный матрас
+                            способствует крепкому сну и бодрому пробуждению. </p>
+
+              <span> Остались вопросы? Звоните  +7(495)278-08-91 <br>
+                  Или <a href="javascript:void(0);">закажите звонок</a> — Бесплатно перезвоним в течение 15 мин</span>
+                        <br>
+                      <span>Теги:
+                          <a href="javascript:void(0);">Матрасы</a>,
+                          <a href="javascript:void(0);">Беспружинные</a>,
+                          <a href="javascript:void(0);">Детские матрасы</a>,
+                          <a href="javascript:void(0);">Беспружинные</a>,
+                          <a href="javascript:void(0);">Из кокоса, кроватку</a>,
+                          <a href="javascript:void(0);">Для новорожденных</a>
+
+  </span>
+                    </div>
+                    <div class="tabs-panel" id="panel22">
+                        <p>Suspendisse dictum feugiat nisl ut dapibus. Vivamus hendrerit arcu sed erat molestie
+                            vehicula. Ut in nulla enim.
+                            Phasellus molestie magna non est bibendum non venenatis nisl tempor. Sed auctor neque eu
+                            tellus rhoncus ut eleifend
+                            nibh porttitor.</p>
+                        <p>Suspendisse dictum feugiat nisl ut dapibus. Vivamus hendrerit arcu sed erat molestie
+                            vehicula. Ut in nulla enim.
+                            Phasellus molestie magna non est bibendum non venenatis nisl tempor. Sed auctor neque eu
+                            tellus rhoncus ut eleifend
+                            nibh porttitor.</p>
+                        <p>Suspendisse dictum feugiat nisl ut dapibus. Vivamus hendrerit arcu sed erat molestie
+                            vehicula. Ut in nulla enim.
+                            Phasellus molestie magna non est bibendum non venenatis nisl tempor. Sed auctor neque eu
+                            tellus rhoncus ut eleifend
+                            nibh porttitor.</p>
+                    </div>
+                    <div class="tabs-panel" id="panel23">
+                        <p>Suspendisse dictum feugiat nisl ut dapibus. Vivamus hendrerit arcu sed erat molestie
+                            vehicula. Ut in nulla enim.
+                            Phasellus molestie magna non est bibendum non venenatis nisl tempor. Sed auctor neque eu
+                            tellus rhoncus ut eleifend
+                            nibh porttitor.</p>
+                        <p>Suspendisse dictum feugiat nisl ut dapibus. Vivamus hendrerit arcu sed erat molestie
+                            vehicula. Ut in nulla enim.
+                            Phasellus molestie magna non est bibendum non venenatis nisl tempor. Sed auctor neque eu
+                            tellus rhoncus ut eleifend
+                            nibh porttitor.</p>
+                        <p>Suspendisse dictum feugiat nisl ut dapibus. Vivamus hendrerit arcu sed erat molestie
+                            vehicula. Ut in nulla enim.
+                            Phasellus molestie magna non est bibendum non venenatis nisl tempor. Sed auctor neque eu
+                            tellus rhoncus ut eleifend
+                            nibh porttitor.</p>
+                    </div>
+                </div>
+            </div>
+            <a href="javascript:void(0);" data-open="present-popup">
+                <div class="large-2 medium-3 small-10 columns small-sq-block present end hide-for-small-only">
+                    <h3>Подарок <img src="assets/img/gift.png" alt=""></h3>
+                    <br>
+          <span>Приобретая кровать <br>
+  матрас Perinno M3 в подарок</span>
+                </div>
+            </a>
+            <div class="large-4 medium-3 small-4 columns">
+                <a href="javascript:void(0);">
+                    <div class="large-5 medium-10 small-5 small-sq-block blog-block columns hide-for-small-only">
+                        <h3>Блог</h3>
+                        <span>Новости и полезные статьи</span>
+                    </div>
+                </a>
+                <a href="javascript:void(0);">
+                    <div style="background-image: url('assets/img/Выбрать-кровать.png');"
+                         class="large-5 medium-10 small-5 small-sq-block small-how columns hide-for-small-only">
+                        <h3>Как выбрать кровать</h3>
+                        <span>Выбирайте кровать правильно</span>
+                    </div>
+                </a>
+            </div>
+            <div class="large-10 medium-10 small-10 columns" data-equalizer>
+                <div class="large-2 medium-10 small-10 columns ms-same-prod__header something-with-border">
+                    <h3>СХОЖИЕ ТОВАРЫ</h3>
+                    <span>Схожие товары по данной категории, которые более выгодные для вас.</span>
+                </div>
+
+                <!--Схожий 1-->
+                <div class="large-2 medium-3 small-10 columns  something-with-border suggested-product orbit"
+                     role="region"
+                     aria-label="suggested product" data-orbit data-auto-play="0">
+                    <ul class="orbit-container">
+                        <li class="orbit-slide is-active">
+                            <div class="thumbnails">
+                                <img src="assets/img/matras-same.png" alt="">
+                            </div>
+                            <h5>Матрас Best Gr</h5>
+                            <p class="sub-header">Perinno</p>
+                            <input id="check-product1" type="checkbox"><label for="check-product1">В сравнение</label>
+                            <span class="total-product-price">13 750 руб</span>
+                        </li>
+                        <li class="orbit-slide">
+                            <h5>Матрас Best Gr</h5>
+                            <p class="sub-header">Perinno</p>
+                            <input id="check-product1" type="checkbox"><label for="check-product1">В сравнение</label>
+                            <ul class="no-bullet">
+                                <li>Жесткость: средняя</li>
+                                <li>Тип: беспружинный</li>
+                                <li>Высота: 22см</li>
+                                <li>Максимальный вес на 1 место: 130кг</li>
+                                <li>Анатомичность: средняя</li>
+                            </ul>
+                            <button class="book-button suggested__button large-10 medium-10 small-10 columns button">13
+                                700 руб • В корзину
+                            </button>
+                        </li>
+                    </ul>
+                    <nav class="orbit-bullets">
+                        <button class="is-active" data-slide="0"><span class="show-for-sr">First slide</span></button>
+                        <button data-slide="1"><span class="show-for-sr">Second slide</span></button>
+                    </nav>
+                </div>
+
+
+                <!--Схожий 2-->
+                <div class="large-2 medium-3 small-10 columns something-with-border suggested-product orbit"
+                     role="region"
+                     aria-label="suggested product" data-orbit data-auto-play="0">
+                    <ul class="orbit-container">
+                        <li class="orbit-slide is-active">
+                            <div class="thumbnails">
+                                <img src="assets/img/matras-same2.png" alt="">
+                            </div>
+                            <h5>Складной матрас</h5>
+                            <p class="sub-header">IKEA</p>
+                            <input id="check-product2" type="checkbox"><label for="check-product2">В сравнение</label>
+                            <span class="total-product-price">13 750 руб</span>
+                        </li>
+                        <li class="orbit-slide">
+                            <h5>Складной матрас</h5>
+                            <p class="sub-header">IKEA</p>
+                            <input id="check-product2" type="checkbox"><label for="check-product2">В сравнение</label>
+                            <ul class="no-bullet">
+                                <li>Жесткость: средняя</li>
+                                <li>Тип: беспружинный</li>
+                                <li>Высота: 22см</li>
+                                <li>Максимальный вес на 1 место: 130кг</li>
+                                <li>Анатомичность: средняя</li>
+                            </ul>
+                            <button class="book-button suggested__button large-10 medium-10 small-10 columns button">13
+                                700 руб • В корзину
+                            </button>
+                        </li>
+                    </ul>
+                    <nav class="orbit-bullets">
+                        <button class="is-active" data-slide="0"><span class="show-for-sr">First slide</span></button>
+                        <button data-slide="1"><span class="show-for-sr">Second slide</span></button>
+                    </nav>
+                </div>
+
+                <!--Схожий 3-->
+                <div class="large-2 medium-3 small-10 columns something-with-border suggested-product orbit"
+                     role="region"
+                     aria-label="suggested product" data-orbit data-auto-play="0">
+                    <ul class="orbit-container">
+                        <li class="orbit-slide is-active">
+                            <div class="thumbnails">
+                                <img src="assets/img/matras-same.png" alt="">
+                            </div>
+                            <h5>Матрас 3mF</h5>
+                            <p class="sub-header">Perinno</p>
+                            <input id="check-product3" type="checkbox"><label for="check-product3">В сравнение</label>
+                            <span class="total-product-price">13 750 руб</span>
+                        </li>
+                        <li class="orbit-slide">
+                            <h5>Матрас 3mF</h5>
+                            <p class="sub-header">Perinno</p>
+                            <input id="check-product3" type="checkbox"><label for="check-product3">В сравнение</label>
+                            <ul class="no-bullet">
+                                <li>Жесткость: средняя</li>
+                                <li>Тип: беспружинный</li>
+                                <li>Высота: 22см</li>
+                                <li>Максимальный вес на 1 место: 130кг</li>
+                                <li>Анатомичность: средняя</li>
+                            </ul>
+                            <button class="book-button suggested__button large-10 medium-10 small-10 columns button">13
+                                700 руб • В корзину
+                            </button>
+                        </li>
+                    </ul>
+                    <nav class="orbit-bullets">
+                        <button class="is-active" data-slide="0"><span class="show-for-sr">First slide</span></button>
+                        <button data-slide="1"><span class="show-for-sr">Second slide</span></button>
+                    </nav>
+                </div>
+
+                <!--Схожий 4-->
+                <div class="large-2 medium-3 small-10 columns something-with-border suggested-product show-for-small show-for-large hide-for-medium-only orbit"
+                     role="region"
+                     aria-label="suggested product" data-orbit data-auto-play="0">
+                    <ul class="orbit-container">
+                        <li class="orbit-slide is-active">
+                            <div class="thumbnails">
+                                <img src="assets/img/matras-same3.png" alt="">
+                            </div>
+                            <h5>Матрас Top deluxe D2</h5>
+                            <p class="sub-header">Perinno</p>
+                            <input id="check-product4" type="checkbox"><label for="check-product4">В сравнение</label>
+                            <span class="total-product-price">13 750 руб</span>
+                        </li>
+                        <li class="orbit-slide">
+                            <h5>Матрас Top deluxe D2</h5>
+                            <p class="sub-header">Perinno</p>
+                            <input id="check-product4" type="checkbox"><label for="check-product4">В сравнение</label>
+                            <ul class="no-bullet">
+                                <li>Жесткость: средняя</li>
+                                <li>Тип: беспружинный</li>
+                                <li>Высота: 22см</li>
+                                <li>Максимальный вес на 1 место: 130кг</li>
+                                <li>Анатомичность: средняя</li>
+                            </ul>
+                            <button class="book-button suggested__button large-10 medium-10 small-10 columns button">13
+                                700 руб • В корзину
+                            </button>
+                        </li>
+                    </ul>
+                    <nav class="orbit-bullets">
+                        <button class="is-active" data-slide="0"><span class="show-for-sr">First slide</span></button>
+                        <button data-slide="1"><span class="show-for-sr">Second slide</span></button>
+                    </nav>
+                </div>
+
+
+            </div>
+            <div class="large-10 medium-10 small-10 columns">
+                <div class="large-2 medium-10 small-10 columns ms-same-prod__header something-with-border">
+                    <h3>ТАКЖЕ РЕКОМЕНДУЕМ</h3>
+                    <span>Дополнительные аксессуары, которые придадут уютный вид вашей спальни</span>
+                </div>
+
+                <!--Рекомендуем 1-->
+                <div class="large-2 medium-3 small-10 columns  something-with-border suggested-product orbit"
+                     role="region"
+                     aria-label="suggested product" data-orbit data-auto-play="0">
+                    <ul class="orbit-container">
+                        <li class="orbit-slide is-active">
+                            <div class="thumbnails">
+                                <img src="assets/img/same1.png" alt="">
+                            </div>
+                            <h5>Матрас Best Gr</h5>
+                            <p class="sub-header">Perinno</p>
+                            <input id="check-product5" type="checkbox"><label for="check-product5">В сравнение</label>
+                            <span class="total-product-price">13 750 руб</span>
+                        </li>
+                        <li class="orbit-slide">
+                            <h5>Матрас Best Gr</h5>
+                            <p class="sub-header">Perinno</p>
+                            <input id="check-product5" type="checkbox"><label for="check-product5">В сравнение</label>
+                            <ul class="no-bullet">
+                                <li>Жесткость: средняя</li>
+                                <li>Тип: беспружинный</li>
+                                <li>Высота: 22см</li>
+                                <li>Максимальный вес на 1 место: 130кг</li>
+                                <li>Анатомичность: средняя</li>
+                            </ul>
+                            <button class="book-button suggested__button large-10 medium-10 small-10 columns button">13
+                                700 руб • В корзину
+                            </button>
+                        </li>
+                    </ul>
+                    <nav class="orbit-bullets">
+                        <button class="is-active" data-slide="0"><span class="show-for-sr">First slide</span></button>
+                        <button data-slide="1"><span class="show-for-sr">Second slide</span></button>
+                    </nav>
+                </div>
+
+                <!--Рекомендуем 2-->
+                <div class="large-2 medium-3 small-10 columns something-with-border suggested-product orbit"
+                     role="region"
+                     aria-label="suggested product" data-orbit data-auto-play="0">
+                    <ul class="orbit-container">
+                        <li class="orbit-slide is-active">
+                            <div class="thumbnails">
+                                <img src="assets/img/same2.png" alt="">
+                            </div>
+                            <h5>Складной матрас</h5>
+                            <p class="sub-header">IKEA</p>
+                            <input id="check-product6" type="checkbox"><label for="check-product6">В сравнение</label>
+                            <span class="total-product-price">13 750 руб</span>
+                        </li>
+                        <li class="orbit-slide">
+                            <h5>Складной матрас</h5>
+                            <p class="sub-header">IKEA</p>
+                            <input id="check-product6" type="checkbox"><label for="check-product6">В сравнение</label>
+                            <ul class="no-bullet">
+                                <li>Жесткость: средняя</li>
+                                <li>Тип: беспружинный</li>
+                                <li>Высота: 22см</li>
+                                <li>Максимальный вес на 1 место: 130кг</li>
+                                <li>Анатомичность: средняя</li>
+                            </ul>
+                            <button class="book-button suggested__button large-10 medium-10 small-10 columns button">13
+                                700 руб • В корзину
+                            </button>
+                        </li>
+                    </ul>
+                    <nav class="orbit-bullets">
+                        <button class="is-active" data-slide="0"><span class="show-for-sr">First slide</span></button>
+                        <button data-slide="1"><span class="show-for-sr">Second slide</span></button>
+                    </nav>
+                </div>
+
+                <!--Рекомендуем 3-->
+                <div class="large-2 medium-3 small-10 columns something-with-border suggested-product orbit"
+                     role="region"
+                     aria-label="suggested product" data-orbit data-auto-play="0">
+                    <ul class="orbit-container">
+                        <li class="orbit-slide is-active">
+                            <div class="thumbnails">
+                                <img src="assets/img/same3.png" alt="">
+                            </div>
+                            <h5>Матрас 3mF</h5>
+                            <p class="sub-header">Perinno</p>
+                            <input id="check-product7" type="checkbox"><label for="check-product7">В сравнение</label>
+                            <span class="total-product-price">13 750 руб</span>
+                        </li>
+                        <li class="orbit-slide">
+                            <h5>Матрас 3mF</h5>
+                            <p class="sub-header">Perinno</p>
+                            <input id="check-product7" type="checkbox"><label for="check-product7">В сравнение</label>
+                            <ul class="no-bullet">
+                                <li>Жесткость: средняя</li>
+                                <li>Тип: беспружинный</li>
+                                <li>Высота: 22см</li>
+                                <li>Максимальный вес на 1 место: 130кг</li>
+                                <li>Анатомичность: средняя</li>
+                            </ul>
+                            <button class="book-button suggested__button large-10 medium-10 small-10 columns button">13
+                                700 руб • В корзину
+                            </button>
+                        </li>
+                    </ul>
+                    <nav class="orbit-bullets">
+                        <button class="is-active" data-slide="0"><span class="show-for-sr">First slide</span></button>
+                        <button data-slide="1"><span class="show-for-sr">Second slide</span></button>
+                    </nav>
+                </div>
+
+                <!--Рекомендуем 4-->
+                <div class="large-2 medium-3 small-10 columns something-with-border suggested-product hide-for-medium-only orbit"
+                     role="region"
+                     aria-label="suggested product" data-orbit data-auto-play="0">
+                    <ul class="orbit-container">
+                        <li class="orbit-slide is-active">
+                            <div class="thumbnails">
+                                <img src="assets/img/same4.png" alt="">
+                            </div>
+                            <h5>Матрас Top deluxe D2</h5>
+                            <p class="sub-header">Perinno</p>
+                            <input id="check-product8" type="checkbox"><label for="check-product8">В сравнение</label>
+                            <span class="total-product-price">13 750 руб</span>
+                        </li>
+                        <li class="orbit-slide">
+                            <h5>Матрас Top deluxe D2</h5>
+                            <p class="sub-header">Perinno</p>
+                            <input id="check-product8" type="checkbox"><label for="check-product8">В сравнение</label>
+                            <ul class="no-bullet">
+                                <li>Жесткость: средняя</li>
+                                <li>Тип: беспружинный</li>
+                                <li>Высота: 22см</li>
+                                <li>Максимальный вес на 1 место: 130кг</li>
+                                <li>Анатомичность: средняя</li>
+                            </ul>
+                            <button class="book-button suggested__button large-10 medium-10 small-10 columns button">13
+                                700 руб • В корзину
+                            </button>
+                        </li>
+                    </ul>
+                    <nav class="orbit-bullets">
+                        <button class="is-active" data-slide="0"><span class="show-for-sr">First slide</span></button>
+                        <button data-slide="1"><span class="show-for-sr">Second slide</span></button>
+                    </nav>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <a class="large-2 medium-4 small-10 columns ms-back-to-prod large-back-to" href="javascript:void(0);">
+            Назад к каталогу
+        </a>
+    </div>
+
+
+    <!--Модальное окно при клике на ссылку матрас начало-->
+    <div class="reveal" id="matra-popup" data-reveal>
+        <h2>Выбор матраса</h2>
+        <div class="large-10 medium-10 small-10 columns orbit" role="region" aria-label="suggested products" data-orbit
+             data-auto-play="0">
+            <ul class="orbit-container">
+                <button class="orbit-previous hide-for-small-only"><img src="assets/img/mainpage/left_arrow.png" alt="">
+                </button>
+                <button class="orbit-next hide-for-small-only"><img src="assets/img/mainpage/right_arrow.png" alt="">
+                </button>
+
+                <!--==========================================================-->
+                <li class="orbit-slide">
+                    <div class="large-5 medium-5 small-10 columns something-with-border suggested-product orbitum">
+                        <div class="thumbnails">
+                            <img src="assets/img/matras-same.png" alt="">
+                        </div>
+                        <h5>Матрас Best Gr</h5>
+                        <select class="select-left-al">
+                            <option value="150x160"><span class="choose-size">Размер: </span>150 х 160 см</option>
+                            <option value="140x160"><span class="choose-size">Размер: </span>140 х 160 см</option>
+                            <option value="150x160"><span class="choose-size">Размер: </span>150 х 160 см</option>
+                            <option value="150x160"><span class="choose-size">Размер: </span>150 х 160 см</option>
+                        </select>
+                        <span class="total-product-price">13 750 руб</span>
+                        <a href="javascript:void(0);" class="button -light">Выбрать</a>
+                    </div>
+                    <div class="large-5 medium-5 small-10 columns something-with-border suggested-product orbitum">
+                        <div class="thumbnails">
+                            <img src="assets/img/matras-same.png" alt="">
+                        </div>
+                        <h5>Матрас Best Gr</h5>
+                        <select class="select-left-al">
+                            <option value="150x160"><span class="choose-size">Размер: </span>150 х 160 см</option>
+                            <option value="140x160"><span class="choose-size">Размер: </span>140 х 160 см</option>
+                            <option value="150x160"><span class="choose-size">Размер: </span>150 х 160 см</option>
+                            <option value="150x160"><span class="choose-size">Размер: </span>150 х 160 см</option>
+                        </select>
+                        <span class="total-product-price">13 750 руб</span>
+                        <a href="javascript:void(0);" class="button -light">Выбрать</a>
+
+                    </div>
+                </li>
+                <!--==========================================================-->
+                <!--==========================================================-->
+                <li class="orbit-slide">
+                    <div class="large-5 medium-5 small-10 columns something-with-border suggested-product orbitum">
+                        <div class="thumbnails">
+                            <img src="assets/img/matras-same.png" alt="">
+                        </div>
+                        <h5>Матрас Best Gr</h5>
+                        <select class="select-left-al">
+                            <option value="150x160"><span class="choose-size">Размер: </span>150 х 160 см</option>
+                            <option value="140x160"><span class="choose-size">Размер: </span>140 х 160 см</option>
+                            <option value="150x160"><span class="choose-size">Размер: </span>150 х 160 см</option>
+                            <option value="150x160"><span class="choose-size">Размер: </span>150 х 160 см</option>
+                        </select>
+                        <span class="total-product-price">13 750 руб</span>
+                        <a href="javascript:void(0);" class="button -light">Выбрать</a>
+                    </div>
+                    <div class="large-5 medium-5 small-10 columns something-with-border suggested-product orbitum">
+                        <div class="thumbnails">
+                            <img src="assets/img/matras-same.png" alt="">
+                        </div>
+                        <h5>Матрас Best Gr</h5>
+                        <select class="select-left-al">
+                            <option value="150x160"><span class="choose-size">Размер: </span>150 х 160 см</option>
+                            <option value="140x160"><span class="choose-size">Размер: </span>140 х 160 см</option>
+                            <option value="150x160"><span class="choose-size">Размер: </span>150 х 160 см</option>
+                            <option value="150x160"><span class="choose-size">Размер: </span>150 х 160 см</option>
+                        </select>
+                        <span class="total-product-price">13 750 руб</span>
+                        <a href="javascript:void(0);" class="button -light">Выбрать</a>
+
+                    </div>
+                </li>
+                <!--==========================================================-->
+            </ul>
+        </div>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+    <!--Модальное окно при клике на ссылку матрас конец-->
+    <!--Модальное окно при клике на ссылку подарков начало-->
+    <div class="reveal" id="present-popup" data-reveal>
+        <h2>Выбор варианта чехла</h2>
+        <div class="large-10 medium-10 small-10 columns">
+            <a href="" class="button">Слой латекса</a>
+            <a href="" class="button -light">Бамбуковый слой</a>
+            <a href="" class="button -light">Бамбуковый слой</a>
+        </div>
+        <div class="large-10 medium-10 small-10 columns choose-layer-matr">
+            <a href="" class="button -light">Бамбуковый слой</a>
+            <a href="" class="button -light">Бамбуковый слой</a>
+            <a href="" class="button -light">Бамбуковый слой</a>
+        </div>
+        <div class="large-3 medium-3 small-10 columns">
+            <div class="thumbnails">
+                <img src="assets/img/matras-same.png" alt="">
+            </div>
+        </div>
+        <div class="large-5 medium-5 small-10 columns">
+            <p>
+                Универсальный чехол Ролл Прима актуален для любой погоды, благодаря конструкции двустороннего покрытия
+                из сезонных материалов. “Летняя” сторона со стежкой по холлофайберу дарит комфортную прохладу в зной, а
+                шерсть “Меринос” на “зимней” стороне выполнена в виде меха и обладает высоким согревающим эффектом.
+            </p>
+        </div>
+        <div class="large-2 medium-2 small-10 columns">
+            <span>Стоимость:</span>
+            <span class="stat">+ 960 руб</span>
+            <a href="" class="button">Выбрать</a>
+        </div>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+    <!--Модальное окно при клике на ссылку подарков конец-->
+
+
+    {{> footer}}
+
+</div>

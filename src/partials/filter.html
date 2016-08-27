@@ -1,0 +1,320 @@
+<form action="">
+    <div class="filter-column__wrap">
+    <!-- first column -->
+    <div class="filter-column columns">
+        <div class="small-10 columns row">
+        <ul class="vertical menu" data-accordion-menu>
+
+            <!--Цена начало-->
+            <li>
+                <a href="javascript:void(0);" class="is-active">
+                    <span data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="1" title="Вспомогательный текст" class="badge helper has-tip">?</span> Цена</a>
+                <ul class="menu vertical nested is-active">
+
+                          <div class="row columns ms-filter-slider-fix">
+                              <div class="small-4 columns">
+                                  <input type="number" class="ms-form-number" id="sliderOutput1">
+                              </div>
+                              <div class="small-1 columns">
+                                  <span class="ms-form-number__text">—</span>
+                              </div>
+                              <div class="small-4 columns">
+                                  <input type="number" class="ms-form-number" id="sliderOutput2">
+                              </div>
+                              <div class="small-1 columns">
+                                  <span class="ms-form-number__text -rub">руб</span>
+                              </div>
+                          </div>
+                    <div class="slider" data-slider data-initial-start="1200" data-initial-end="10000" data-step="500" data-end="20000">
+                                <span class="slider-handle" data-slider-handle role="slider" tabindex="1"
+                                      aria-controls="sliderOutput1"></span>
+                        <span class="slider-fill" data-slider-fill></span>
+                                <span class="slider-handle" data-slider-handle role="slider" tabindex="2"
+                                      aria-controls="sliderOutput2"></span>
+                    </div>
+                    </ul>
+            </li>
+            <!--Цена конец-->
+
+            <!--Размер начало-->
+            <li>
+                <a href="javascript:void(0);" class="is-active">
+                        <span data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="1" title="Вспомогательный текст"
+                              class="badge helper has-tip">?</span>
+                    Размер</a>
+                <ul class="menu vertical nested is-active">
+                    <select>
+                        <option value="150х160">150 х 160 см</option>
+                        <option value="150х170">150 х 170 см</option>
+                        <option value="170х210">170 х 210 см</option>
+                        <option value="150х160">150 х 160 см</option>
+                        <option value="150х170">150 х 170 см</option>
+                        <option value="170х210">170 х 210 см</option>
+                    </select>
+                </ul>
+            </li>
+            <!--Размер конец-->
+
+            <!--Разная жесткость сторон начало-->
+            <li>
+                <a href="javascript:void(0);">
+                                 <span data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="1"
+                                       title="Вспомогательный текст" class="badge helper has-tip">?</span>
+                    Разная жесткость сторон</a>
+                <ul class="menu vertical nested">
+                    <li><input type="radio" name="raznaya" value="yes" id="raznayayes" required><label for="raznayayes">Да</label></li>
+                    <li><input type="radio" name="raznaya" value="no" id="raznayano"><label for="raznayano">Нет</label></li>
+                    <li><input type="radio" name="raznaya" value="idontknow" id="raznayaidontknow" checked><label for="raznayaidontknow">Не важно</label></li>
+                </ul>
+            </li>
+            <!--Разная жесткость сторон конец-->
+
+            <!--Жесткость 1-ой стороны начало-->
+            <li>
+                <a href="javascript:void(0);">
+                        <span data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="1" title="Вспомогательный текст"
+                              class="badge helper has-tip">?</span>
+                    Жесткость 1-ой стороны</a>
+                <ul class="menu vertical nested">
+                    <li><input id="checkbox11" type="checkbox"><label for="checkbox11">Мягкий</label></li>
+                    <li><input id="checkbox12" type="checkbox"><label for="checkbox12">Умеренно мягкий</label></li>
+                    <li><input id="checkbox13" type="checkbox"><label for="checkbox13">Средний</label></li>
+                    <li><input id="checkbox14" type="checkbox"><label for="checkbox14">Умеренно жесткий</label></li>
+                    <li><input id="checkbox15" type="checkbox"><label for="checkbox15">Жесткий</label></li>
+                </ul>
+            </li>
+            <!--Жесткость 1-ой стороны конец-->
+
+            <!--Жесткость 2-ой стороны начало-->
+            <li>
+                <a href="javascript:void(0);">
+                        <span data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="1" title="Вспомогательный текст"
+                              class="badge helper has-tip">?</span>
+                    Жесткость 2-ой стороны</a>
+                <ul class="menu vertical nested">
+                    <li><input id="checkbox21" type="checkbox"><label for="checkbox21">Мягкий</label></li>
+                    <li><input id="checkbox22" type="checkbox"><label for="checkbox22">Умеренно мягкий</label></li>
+                    <li><input id="checkbox23" type="checkbox"><label for="checkbox23">Средний</label></li>
+                    <li><input id="checkbox24" type="checkbox"><label for="checkbox24">Умеренно жесткий</label></li>
+                    <li><input id="checkbox25" type="checkbox"><label for="checkbox25">Жесткий</label></li>
+                </ul>
+            </li>
+            <!--Жесткость 2-ой стороны конец-->
+
+            <!--Производитель начало-->
+            <li>
+                <a href="javascript:void(0);">
+                        <span data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="1" title="Вспомогательный текст"
+                              class="badge helper has-tip">?</span>
+                    Производитель</a>
+                <ul class="menu vertical nested">
+                    <li>
+                        <div class="input-group">
+                            <input class="filter__search input-group-field" type="search">
+                            <div class="input-group-button">
+                                <input class="filter__search-button button" type="submit" value="O">
+                            </div>
+                        </div>
+                    </li>
+                    <li><input id="checkbox31" type="checkbox"><label for="checkbox31">DreamLine</label></li>
+                    <li><input id="checkbox32" type="checkbox"><label for="checkbox32">DREAM EXPERT</label></li>
+                    <li><input id="checkbox33" type="checkbox"><label for="checkbox33">BENARTTI</label></li>
+                    <li><input id="checkbox34" type="checkbox"><label for="checkbox34">Comfort LINE</label></li>
+                </ul>
+            <li>
+                <!--Производитель конец-->
+
+        </ul>
+
+    </div>
+        </div>
+    <!-- first column end -->
+    <!-- second column -->
+    <div class="filter-column columns">
+        <div class="small-10 medium-10 large-10 columns">
+
+            <ul class="vertical menu" data-accordion-menu>
+
+                <!--Тип матраса начало-->
+                <li>
+                    <a href="javascript:void(0);" class="is-active">
+                        <span data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="1"
+                              title="Вспомогательный текст" class="badge helper has-tip">?</span>
+                        Тип матраса</a>
+                    <ul class="menu vertical nested is-active">
+                        <li><input id="checkbox41" type="checkbox"><label for="checkbox41">Беспружинный</label></li>
+                        <li><input id="checkbox42" type="checkbox"><label for="checkbox42">Пружинный</label></li>
+                        <li><input id="checkbox43" type="checkbox"><label for="checkbox43">Обычный</label></li>
+                    </ul>
+                </li>
+                <!--Тип матраса конец-->
+
+                <!--Высота начало-->
+                <li>
+                    <a href="javascript:void(0);" class="is-active"><span><span data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="1"
+                                                                                title="Вспомогательный текст" class="badge helper has-tip">?</span> Высота</span>
+                    </a>
+                    <ul class="menu vertical nested is-active">
+                        <li>
+                            <div class="row columns ms-filter-slider-fix">
+                                <div class="small-4 columns">
+                                    <input type="number" class="ms-form-number" id="sliderOutput3">
+                                </div>
+                                <div class="small-1 columns">
+                                    <span class="ms-form-number__text">—</span>
+                                </div>
+                                <div class="small-4 columns">
+                                    <input type="number" class="ms-form-number" id="sliderOutput4">
+                                </div>
+                                <div class="small-1 columns">
+                                    <span class="ms-form-number__text -rub">см</span>
+                                </div>
+                            </div>
+                            <div class="slider" data-slider data-initial-start="100" data-initial-end="200" data-step="10" data-end="300">
+                                <span class="slider-handle" data-slider-handle role="slider" tabindex="3" aria-controls="sliderOutput3"></span>
+                                <span class="slider-fill" data-slider-fill></span>
+                                <span class="slider-handle" data-slider-handle role="slider" tabindex="4" aria-controls="sliderOutput4"></span>
+                            </div>
+
+                        </li>
+                    </ul>
+                </li>
+                <!--Высота конец-->
+
+                <!--Анатомичность начало-->
+                <li><a href="javascript:void(0);">
+                    <span data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="1" title="Вспомогательный текст"
+                          class="badge helper has-tip">?</span> Анатомичность</a>
+                    <ul class="menu vertical nested">
+                        <li><input id="checkbox51" type="checkbox"><label for="checkbox51">Отличная</label></li>
+                        <li><input id="checkbox52" type="checkbox"><label for="checkbox52">Очень хорошая</label></li>
+                        <li><input id="checkbox53" type="checkbox"><label for="checkbox53">Средняя</label></li>
+                        <li><input id="checkbox54" type="checkbox"><label for="checkbox54">Начальная</label></li>
+                    </ul>
+                </li>
+                <!--Анатомичность конец-->
+
+            </ul>
+        </div>
+    </div>
+    <!-- second column end -->
+    <!-- third column -->
+    <div class="filter-column columns">
+        <div class="small-10 medium-10 large-10 columns">
+            <ul class="vertical menu" data-accordion-menu>
+                <!--Вес начало-->
+                <li>
+                    <a href="javascript:void(0);" class="is-active"><span><span data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="1"
+                                                                                title="Вспомогательный текст" class="badge helper has-tip">?</span> Максимальный вес</span>
+                    </a>
+                    <ul class="menu vertical nested is-active">
+                        <li>
+                            <div class="row columns ms-filter-slider-fix">
+                                <div class="small-4 columns">
+                                    <input type="number" class="ms-form-number" id="sliderOutput5">
+                                </div>
+                                <div class="small-1 columns">
+                                    <span class="ms-form-number__text">—</span>
+                                </div>
+                                <div class="small-4 columns">
+                                    <input type="number" class="ms-form-number" id="sliderOutput6">
+                                </div>
+                                <div class="small-1 columns">
+                                    <span class="ms-form-number__text -rub">кг</span>
+                                </div>
+                            </div>
+                            <div class="slider" data-slider data-initial-start="21" data-initial-end="200" data-step="1" data-end="200">
+                                <span class="slider-handle" data-slider-handle role="slider" tabindex="5" aria-controls="sliderOutput5"></span>
+                                <span class="slider-fill" data-slider-fill></span>
+                                <span class="slider-handle" data-slider-handle role="slider" tabindex="6" aria-controls="sliderOutput6"></span>
+                            </div>
+
+                        </li>
+                    </ul>
+                </li>
+                <!--Вес конец-->
+
+                <!--Кол-во пружин начало-->
+                <li>
+                    <a href="javascript:void(0);">
+                     <span data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="1"
+                           title="Вспомогательный текст" class="badge helper has-tip">?</span>
+                        Кол-во пружин</a>
+                    <ul class="menu vertical nested">
+                        <li><input id="checkbox61" type="checkbox"><label for="checkbox61">Много</label></li>
+                        <li><input id="checkbox62" type="checkbox"><label for="checkbox62">Мало</label></li>
+                        <li><input id="checkbox63" type="checkbox"><label for="checkbox63">Немного</label></li>
+                    </ul>
+                </li>
+                <!--Кол-во пружин конец-->
+
+                <!--Натуральность материалов начало-->
+                <li>
+                    <a href="javascript:void(0);">
+                     <span data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="1"
+                           title="Вспомогательный текст" class="badge helper has-tip">?</span>
+                        Натуральность</a>
+                    <ul class="menu vertical nested">
+                        <li><input id="checkbox71" type="checkbox"><label for="checkbox71">Высокая</label></li>
+                        <li><input id="checkbox72" type="checkbox"><label for="checkbox72">Средняя</label></li>
+                        <li><input id="checkbox73" type="checkbox"><label for="checkbox73">Низкая</label></li>
+                    </ul>
+                </li>
+                <!--Натуральность материалов конец-->
+            </ul>
+        </div>
+    </div>
+    <!-- third column end -->
+    <!-- fourth column -->
+    <div class="filter-column show-for-large columns">
+        <div class="small-10 medium-10 large-10 columns">
+            <ul class="vertical menu" data-accordion-menu>
+                <!--Материалы начало-->
+                <li>
+                    <a href="javascript:void(0);" class="is-active">
+                         <span data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="1"
+                               title="Вспомогательный текст" class="badge helper has-tip">?</span>
+                        Материалы</a>
+                    <ul class="menu vertical nested is-active">
+                        <li><input id="checkbox81" type="checkbox"><label for="checkbox81">Материал</label></li>
+                        <li><input id="checkbox82" type="checkbox"><label for="checkbox82">Материал</label></li>
+                        <li><input id="checkbox83" type="checkbox"><label for="checkbox83">Материал</label></li>
+                    </ul>
+                </li>
+                <!--Материалы конец-->
+
+                <!--Съемный чехол начало-->
+                <li>
+                    <a href="javascript:void(0);" class="is-active">
+                    <span data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="1" title="Вспомогательный текст"
+                          class="badge helper has-tip">?</span> Съемный чехол</a>
+                    <ul class="menu vertical nested is-active">
+                        <li><input id="checkbox91" type="checkbox"><label for="checkbox91">Да</label></li>
+                        <li><input id="checkbox92" type="checkbox"><label for="checkbox92">Нет</label></li>
+                    </ul>
+                </li>
+                <!--Съемный чехол конец-->
+
+                <!--Упаковка начало-->
+                <li>
+                    <a href="javascript:void(0);">
+                    <span data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="1" title="Вспомогательный текст"
+                          class="badge helper has-tip">?</span> Упаковка</a>
+                    <ul class="menu vertical nested">
+                        <li><input id="checkbox101" type="checkbox"><label for="checkbox101">В рулоне</label></li>
+                        <li><input id="checkbox102" type="checkbox"><label for="checkbox102">Упаковать</label></li>
+                        <li><input id="checkbox103" type="checkbox"><label for="checkbox103">Не упаковывать</label></li>
+                    </ul>
+                </li>
+                <!--Упаковка конец-->
+            </ul>
+
+        </div>
+    </div>
+    <!-- fourth column end -->
+    </div>
+    <div class="large-10 medium-10 small-10 columns text-center filter-action">
+        <button class="button"><span>145</span> шт. <span class="ms-separator">•</span>Показать</button>
+    </div>
+</form>
+

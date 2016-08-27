@@ -1,0 +1,520 @@
+@charset 'utf-8';
+*:focus {
+  outline: 0;
+}
+
+@import 'settings';
+@import 'foundation';
+@import 'motion-ui';
+
+@include foundation-global-styles;
+@include foundation-grid;
+// @include foundation-flex-grid;
+@include foundation-typography;
+@include foundation-button;
+@include foundation-forms;
+// @include foundation-range-input;
+@include foundation-accordion;
+@include foundation-accordion-menu;
+@include foundation-badge;
+@include foundation-breadcrumbs;
+@include foundation-button-group;
+@include foundation-callout;
+@include foundation-close-button;
+@include foundation-menu;
+@include foundation-menu-icon;
+@include foundation-drilldown-menu;
+@include foundation-dropdown;
+@include foundation-dropdown-menu;
+@include foundation-flex-video;
+@include foundation-label;
+@include foundation-media-object;
+@include foundation-off-canvas;
+@include foundation-orbit;
+@include foundation-pagination;
+@include foundation-progress-bar;
+// @include foundation-progress-element;
+// @include foundation-meter-element;
+@include foundation-slider;
+@include foundation-sticky;
+@include foundation-reveal;
+@include foundation-switch;
+@include foundation-table;
+@include foundation-tabs;
+@include foundation-thumbnail;
+@include foundation-title-bar;
+@include foundation-tooltip;
+@include foundation-top-bar;
+@include foundation-visibility-classes;
+@include foundation-float-classes;
+// @include foundation-flex-classes;
+
+@include motion-ui-transitions;
+@include motion-ui-animations;
+
+$accent-color: #2d81df;
+$base-font-color: #656565;
+$base-color: #a6a6a6;
+$base-lite-font-color: #ccc;
+$base-border-color: #e4e4e4;
+$base-bg-color: #f2f2f2;
+$base-lite-color: #fff;
+
+ input[type="search"], input[type="number"], input[type="text"] {
+   box-shadow: none !important;
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+ }
+body {
+  min-width: 320px !important;
+  background: $base-lite-color;
+  font-weight: 400;
+  color: #505050;
+}
+.row {
+  @include breakpoint(medium down) {
+    padding: 0 20px;
+  }
+  @include breakpoint(small down) {
+    padding: 0 20px;
+  }
+}
+.button {
+  @include breakpoint(small down) {
+    padding: 15px 45px;
+  }
+}
+
+form {
+  label {
+    span {
+      color: $base-lite-font-color;
+      background: $base-lite-color;
+      padding: 5px;
+    }
+  }
+}
+.tooltip {
+  border: 1px solid $base-border-color;
+}
+blockquote {
+  font-style: italic;
+  border:none;
+  position: relative;
+  font-size: 1.3em;
+  margin: 30px 0;
+  &::before {
+    content: url(../img/icons/quote.png);
+    position: absolute;
+    left: -50px;
+    top: 32%;
+    border: none;
+    @include breakpoint(medium down) {
+      left: 60px;
+      top: 45%;
+    }
+    @include breakpoint(small down) {
+      left: 20px;
+      top: 25%;
+    }
+    }
+  span {
+    margin-left: -10%;
+    width: 110%;
+    background: #f7f7f7;
+    padding: 45px;
+    padding-left: 10%;
+    display: block;
+    @include breakpoint(medium down) {
+      width: 100%;
+      margin: 0;
+      padding-left: 20%;
+    }
+    @include breakpoint(small down) {
+      font-size: 0.8em;
+    }
+  }
+}
+input[type='text'], textarea {
+  font-weight: 500;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  background: $base-lite-color;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  border: 2px solid $base-border-color;
+  margin-left: -10px;
+  margin-top: -12px;
+  padding: 15px;
+  height: 40px;
+  &:focus {
+    border: 2px solid $accent-color;
+  }
+  &:focus + .form-label {
+    color: $accent-color;
+  }
+
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 300;
+}
+
+h1 {
+  color: $base-font-color;
+  font-weight: 500;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin-top: 10px;
+  color: $base-font-color;
+  font-weight: 500;
+  font-size: 20px;
+  @include breakpoint(small down) {
+    font-size: 1.8em;
+  }
+}
+
+h3 {
+  color: $base-font-color;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+h2.sub-header, .sub-header {
+  color: $base-lite-font-color;
+  font-weight: 300;
+  font-size: 0.8em;
+}
+
+.ms-header-nonupper {
+  text-transform: none;
+}
+.button {
+  &.-light {
+    background: $base-lite-color;
+    color: #000;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $base-font-color;
+    border: 1px solid $base-border-color;
+    &:hover {
+      background: $base-lite-color;
+      color: #000;
+    }
+  }
+}
+
+.medium-back-to {
+  border: none;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $base-font-color;
+  padding: 10px;
+  margin: 20px 0 20px 0;
+
+  display: inline-block;
+}
+
+.medium-back-to::before {
+  content: url(../img/back-arrow.png);
+  margin-right: 1rem;
+  margin-top: 20px;
+}
+
+
+.you-are-here {
+  padding: 45px 0 20px 30px;
+  border-bottom: 1px solid $base-border-color;
+
+  span {
+    color: $base-lite-font-color;
+  }
+}
+
+
+.small-sq-block {
+  height: 250px;
+  @include breakpoint (medium down) {
+    height: 200px;
+  }
+}
+
+.tabs-title > a {
+  font-size: 1rem;
+  padding-top: 17px;
+  text-transform: uppercase;
+  color: $base-lite-font-color;
+  @include breakpoint (medium down)  {
+    padding: 15px 12px;
+  }
+  @include breakpoint (small down)  {
+    padding: 15px 5px;
+  }
+}
+
+.tabs-title > a:focus, .tabs-title > a[aria-selected='true'] {
+  color: $base-font-color;
+  border-bottom: 2px solid $accent-color;
+  background: $base-lite-color;
+  padding-top: 17px;
+  padding-bottom: 15px;
+}
+
+.large-back-to {
+  color: #c1c1c1;
+  margin-top: 65px;
+  border: 1px solid $base-border-color;
+  height: 42px;
+  padding: 8px 40px;
+  background: $base-lite-color url('../img/arrow-button.png') no-repeat 100% 50%;
+  &:hover {
+    border: 1px solid $accent-color;
+
+  }
+}
+.large-forward-to {
+  color: #c1c1c1;
+  margin-top: 65px;
+  border: 1px solid $base-border-color;
+  height: 42px;
+  padding: 8px 40px;
+  text-align: right;
+  background: $base-lite-color url('../img/arrow-button2.png') no-repeat 0% 50%;
+
+  &:hover {
+    border: 1px solid $accent-color;
+
+  }
+}
+
+.page-border {
+  max-width: 1240px;
+  margin: auto;
+  border: 1px solid $base-border-color;
+}
+
+.tabs, .tabs-content {
+  border: none;
+  background: $base-lite-color;
+}
+
+.tabs {
+  border-bottom: 1px solid $base-border-color;
+}
+
+.something-with-border {
+  border: 1px solid $base-border-color;
+  padding: 20px;
+}
+
+.pagination {
+  padding: 0;
+  width: 100%;
+  .ellipsis::after {
+    color: $base-lite-font-color;
+  }
+  text-align: center;
+  border:1px solid $base-border-color;
+}
+a.pagination__link {
+  padding: 20px;
+  display: inline-block;
+  color: $base-lite-font-color;
+  &:hover {
+    color: #000;
+    background: $base-lite-color;
+  }
+}
+.pagination .current {
+  color: #000;
+  background: $base-lite-color;
+}
+
+.ms-prodpagination {
+  width: 95%;
+  margin-left: 10px;
+  @include breakpoint (medium down)  {
+    width: 100%;
+    margin-left: 0;
+  }
+
+
+}
+.pagination-next {
+  float: right;
+a {
+  margin: 0;
+  height: 64px;
+  padding: 22px;
+  padding-left: 80px;
+  display: block;
+  color: $base-lite-font-color;
+  background: url('../img/arrow-button2.png') no-repeat;
+  background-position: 0 50%;
+  border-left:1px solid $base-border-color;
+  &:hover {
+    color: #000;
+    background: url('../img/arrow-button2.png') no-repeat;
+    background-position: 0 50%;
+  }
+  &::after {
+    display: none;
+  }
+  @include breakpoint (small down)  {
+    background: url('../img/arrow-button2.png') no-repeat;
+    background-position: -35px 50%;
+    font-size: 0;
+    padding-left: 20px;
+    width: 40px;
+  }
+}
+
+}
+.pagination-previous {
+  float: left;
+  a {
+    margin: 0;
+    height: 64px;
+    padding: 22px;
+    padding-right: 80px;
+    display: block;
+    color: $base-lite-font-color;
+    background: url('../img/arrow-button.png') no-repeat;
+    background-position: 100% 50%;
+    border-right:1px solid $base-border-color;
+    &:hover {
+      color: #000;
+      background: url('../img/arrow-button.png') no-repeat;
+      background-position: 100% 50%;
+
+    }
+    &::before {
+      display: none;
+    }
+    @include breakpoint (small down)  {
+      background: url('../img/arrow-button.png') no-repeat;
+      background-position:  -140% 50%;
+      font-size: 0;
+      padding-right: 20px;
+      width: 40px;
+    }
+  }
+}
+.orbit-bullets button {
+  width: 0.5em;
+  height: 0.5em;
+}
+.ms-top-border-fix {
+  border-top:1px solid $base-border-color;
+}
+.ms-sale-per {
+  position: absolute;
+  display: block;
+  text-align: center;
+  color: $base-lite-color;
+  padding-top: 2px;
+  width: 90px;
+  height: 25px;
+  top: 20px;
+  top: 20px;
+  left: 0;
+  background: #4bae38;
+}
+.ms-sale-act {
+  position: absolute;
+  display: block;
+  text-align: center;
+  color: $base-lite-color;
+  padding-top: 2px;
+  width: 90px;
+  height: 25px;
+  top: 20px;
+  top: 20px;
+  left: 0;
+  background: #d14451;
+}
+.pagination li  {
+    @include breakpoint(small down) {
+      display: inline-block;
+    }
+}
+.ms-toggle-trigger {
+  position: relative;
+}
+.ms-custom-modal {
+  position: absolute;
+  top: 50px;
+  padding: 10px;
+  left: -10px;
+  border: 1px solid $base-border-color;
+  background: $base-lite-color;
+  z-index: 1000;
+  -webkit-box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.42);
+  -moz-box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.42);
+  box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.42);
+  &::before {
+    content: '';
+    position: absolute;
+    left: 45%; top: -20px;
+    border: 10px solid transparent;
+    border-bottom: 10px solid white;
+  }
+}
+.ms-custom-modal-product-top {
+  left: -23px;
+  top: 200px;
+  &::before {
+    content: '';
+    position: absolute;
+    left: 45%; top: 138px;
+    border: 10px solid transparent;
+    border-top: 10px solid white;
+  }
+}
+.callout {
+  border:none;
+}
+.off-canvas.position-right{
+  background: $base-lite-color;
+  z-index: 11;
+  height: 1500px;
+}
+#city-popup {
+  input {
+    border:1px solid $base-border-color;
+    margin-bottom: 30px;
+  }
+ a {
+   display: block;
+   padding: 5px 20px;
+   color: $base-font-color;
+ &:hover {
+   color:$accent-color;
+ }
+ }
+}
+@import 'header';
+@import 'sidebar';
+@import 'footer';
+@import 'filter';
+
+@import 'mainpage/mainpage';
+
+@import 'cart/items-cart';
+
+@import 'contacts/contacts';
+@import 'blog/blog';
+
+@import 'single-product';
+@import 'productspage/products';
+@import 'breadcrumbs';
+
+@import 'shippingpage/shipping';
+@import 'manufacturerpage/manufacturer';
+@import 'comparisonpage/comparison';

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="15.969" height="16" viewBox="0 0 15.969 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ccc;
+        fill-rule: evenodd;
+        opacity: 0.6;
+      }
+    </style>
+  </defs>
+  <path id="magnifier_копия_2" data-name="magnifier копия 2" class="cls-1" d="M625.986,31a7,7,0,1,1,6.99-7A7,7,0,0,1,625.986,31Zm0-12a5,5,0,1,0,4.993,5A5,5,0,0,0,625.986,19Zm7.991,14a0.988,0.988,0,0,1-.706-0.294l-3-3a1,1,0,1,1,1.411-1.416l3,3A1,1,0,0,1,633.977,33Z" transform="translate(-619 -17)"/>
+</svg>

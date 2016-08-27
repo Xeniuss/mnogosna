@@ -1,0 +1,18 @@
+
+[
+  {
+    "itemName" : "Матрас EO Classic",
+    "itemSubName" : "DreamLine",
+    "itemImageUrl"  : "assets/img/matras.png",
+    "itemPrice" : "2 450 руб",
+    "itemDiscount" : "Скидка: 1 500 руб",
+    "itemTotalPrice" : "2 450 руб"
+  },
+  {
+    "itemName" : "Основа для кровати",
+    "itemSubName" : "Askona",
+    "itemImageUrl"  : "assets/img/osnova-krov.png",
+    "itemPrice" : "4 525 руб",
+    "itemTotalPrice" : "4 525 руб"
+  }
+]

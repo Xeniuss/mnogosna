@@ -1,0 +1,314 @@
+.header__logo {
+  display: block;
+  margin: 18px auto;
+  &:hover {
+    opacity: 0.5;
+  }
+  @include breakpoint(small down) {
+    width: 120px;
+  }
+  @include breakpoint(1024px down) {
+    width: 150px;
+  }
+
+}
+
+.header__logo-wrap {
+  border-left: 1px solid $base-border-color;
+  border-bottom: 1px solid $base-border-color;
+  border-right: 1px solid $base-border-color;
+  height: 112px;
+  @include breakpoint(medium down) {
+    border: none;
+  }
+
+}
+
+.main-navigation {
+  border-bottom: 1px solid $base-border-color;
+  height: 56px;
+  .main-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    .main-menu__item {
+      padding: 0;
+      margin: 0;
+      display: inline-block;
+      .link {
+        display: inline-block;
+        padding: 20px 20.4px;
+        line-height: 1;
+        color: $base-color;
+        @include breakpoint(1237px down) {
+          padding: 20px 12px;
+          &:first-child {
+            margin-left: 12px;
+          }
+        }
+        @include breakpoint(1150px down) {
+          padding: 20px 9px;
+        }
+        @include breakpoint(1184px down) {
+          padding: 20px 7px;
+          &:first-child {
+            margin-left: 10px;
+          }
+        }
+        &:hover {
+          background: $accent-color;
+          color: $base-lite-color;
+        }
+      }
+    }
+  }
+}
+
+.number-tip {
+  text-align: center;
+  max-width: 500px !important;
+  padding: 20px 65px;
+}
+
+.has-tip.number {
+  font-weight: 500;
+  border-bottom: none;
+}
+
+.contacts {
+  height: 56px;
+  border: 1px solid $accent-color;
+  padding: 15px 9px 15px 10px;
+  width: 296px;
+  @include breakpoint(1237px down) {
+    width: auto;
+  }
+  @include breakpoint(1154px down) {
+    padding: 15px 5px;
+  }
+  @include breakpoint(1117px down) {
+    font-size: 0.9em;
+  }
+  @include breakpoint(1024px down) {
+    font-size: 0.9em;
+    width: 244px;
+  }
+
+  @include breakpoint(medium down) {
+    border: none;
+    background: $accent-color;
+    color: $base-lite-color;
+  }
+  @include breakpoint(690px down) {
+    font-size: 0.8em;
+  }
+  .number {
+    color: $accent-color;
+    &:hover {
+      cursor: pointer;
+    }
+    @include breakpoint(medium down) {
+      color: $base-lite-color;
+      a {
+        color: $base-lite-color;
+      }
+    }
+  }
+}
+
+.ms-number-wrap {
+  position: relative;
+  width: 30%;
+  left: -1px;
+  &:hover {
+    background: $accent-color;
+    cursor: pointer;
+    a, span {
+      color: $base-lite-color;
+    }
+  }
+  @include breakpoint(medium down) {
+    padding: 18px 8px;
+    left: -30%;
+    height: 54px;
+  }
+  @include breakpoint(1024px down) {
+    padding: 5px 8px;
+    text-align: center;
+  }
+  }
+
+.ms-header__icon {
+  margin-right: 7px;
+}
+
+.header__cart {
+  left: -1px;
+  color: $base-lite-color;
+  padding: 16px 5px 16px 20px;
+  width: 55%;
+  display: inline-block;
+  background: #ff0f37;
+  position: relative;
+  &:hover, &:active, &:focus {
+    color: $base-lite-color;
+    background: darken(#fe3245, 15%);
+  }
+  .badge {
+    background: none;
+    font-size: 1em;
+    padding: 0;
+    margin-left: 5px;
+  }
+  @include breakpoint(1142px down) {
+    padding: 16px 0 16px 5px;
+  }
+  @include breakpoint(1024px down) {
+    padding: 17px 0px 16px 10px;
+    font-size: 0.85em;
+    width: 54.5%;
+  }
+  @include breakpoint(690px down) {
+    padding: 19px 0px 18px 10px;
+    font-size: 0.7em;
+    padding-left: 42px;
+  }
+  @include breakpoint(medium down) {
+    width: 100%;
+    background: $base-lite-color;
+    color: #000;
+    border-bottom: 1px solid $base-border-color;
+    border-right: 1px solid $base-border-color;
+    position: relative;
+    padding-left: 50px;
+    .badge {
+      color: #000;
+    }
+  }
+  @include breakpoint(medium only) {
+  &::before {
+    content: url(../img/icons/cart-gr.png);
+    left: 20px;
+    bottom: 13px;
+    position: absolute;
+  }
+}
+  @include breakpoint(small down) {
+    padding: 0px;
+    margin-top: 25px;
+    float: right;
+    background: $base-lite-color;
+    color: #fe3245;
+    border: none;
+    font-size: 0.9em;
+    .badge {
+      color: #fe3245;
+      &::after {
+        content: ' шт.';
+        color: #fe3245;
+      }
+      &::before {
+        content: url(../img/icons/cart-r.png);
+        margin-right: 5px;
+        margin-top: 20px;
+      }
+    }
+
+  }
+}
+
+.header__choose-location {
+  display: inline-block;
+  padding: 16px;
+  text-align: center;
+  width: 43.5%;
+  color: #444;
+  .ms-header__icon {
+    margin-right: 15px;
+  }
+  @include breakpoint(1142px down) {
+    width: 43%;
+    padding: 16px 10px;
+  }
+  @include breakpoint(1024px down) {
+    padding: 14px;
+    font-size: 0.9em;
+  }
+}
+
+.header__search {
+  border: 1px solid $base-border-color;
+  border-left: none;
+  border-right: 0;
+  height: 56px;
+  margin: 0;
+  background: $base-lite-color;
+  box-shadow: none;
+  padding-left: 40px;
+}
+
+.header__search-button {
+  border: 1px solid $base-border-color;
+  border-left: 0;
+  height: 56px;
+  background: $base-lite-color url('../img/search-button.svg') no-repeat;
+  background-position: 50% 50%;
+  width: 50px;
+  &:hover, &:active, &:focus {
+    background: $base-lite-color url('../img/search-button.svg') no-repeat;
+    background-position: 50% 50%;
+
+  }
+}
+
+.input-group {
+  margin: 0;
+}
+
+.ms-mobilenav_trigger {
+  color: $accent-color;
+  text-transform: uppercase;
+  i {
+    color: $base-lite-font-color;
+  }
+}
+
+.ms-shop-button {
+  text-transform: uppercase;
+  text-align: right;
+  	margin-top: 5px;
+}
+
+.ms-mobilenav_wrap {
+  padding: 30px 0;
+  @include breakpoint(medium down) {
+    padding: 10px 30px 20px 30px;
+  }
+}
+
+.ms-mobilenav {
+  ul {
+    list-style: none;
+    border-top: 1px solid $base-border-color;
+
+    li {
+      display: block;
+      width: 100%;
+      padding: 20px;
+      border-bottom: 1px solid $base-border-color;
+      border-left: 1px solid $base-border-color;
+
+    }
+  }
+}
+
+.off-canvas {
+  background: $base-lite-color;
+  padding-top: 130px;
+  @include breakpoint(small down) {
+    padding-top: 0;
+  }
+}
+.ms-custom-modal {
+  color: #000;
+}

@@ -1,0 +1,55 @@
+<div class="off-canvas-wrapper">
+	<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+<div class="row">
+	<div class="large-2 medium-3 small-4 columns header__logo-wrap small-push-3 large-push-0 medium-push-0">
+		<a href="/">
+			<img class="header__logo" src="{{root}}/assets/img/logo.png" alt="">
+		</a>
+	</div>
+	<div class="large-8 medium-7 small-6 columns">
+		<div class="large-7 medium-7 small-7 show-for-large columns">
+			<div class="input-group">
+				<input class="header__search input-group-field" type="search" placeholder="Поиск">
+				<div class="input-group-button">
+					<input class="header__search-button button" type="submit" value="">
+				</div>
+			</div>
+		</div>
+		<div class="large-3 medium-4 small-4 medium-push-7 small-push-6 large-push-0 columns">
+			<a href="javascript:void(0);" class="header__choose-location show-for-large"  data-open="city-popup"><i class="ms-header__icon hide-for-medium-only">
+				<img src="assets/img/icons/location.png" alt=""></i>Москва</a>
+			<a href="javascript:void(0);" class="header__cart" data-open="cart-popup"><i class="ms-header__icon show-for-large"><img src="assets/img/icons/cart.png" alt=""></i><span class="hide-for-small-only">Корзина</span><span class="badge">2</span></a>
+		</div>
+		<div class="main-navigation large-7 medium-7 show-for-large small-7 columns">
+			<ul class="main-menu">
+				{{#each menuitms}}
+				<li class="main-menu__item"><a class="link" href="{{itemUrl}}">{{itemName}}</a></li>
+				{{/each}}
+			</ul>
+		</div>
+		<div class="contacts large-3 medium-6 small-3 hide-for-small-only ms-number-wrap medium-pull-5 large-pull-0 columns" data-toggle="getcall-header">
+			<span class="number">+ 7 495 278 08 91 · Позвонить&nbsp;вам?</span>
+			<div class="ms-custom-modal is-hidden" id="getcall-header" data-toggler="is-hidden">
+				<p>Вам перезвонят, в течении 15 минут</p>
+				<small>На самом деле нет</small>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="off-canvas position-right" id="offCanvasRight" data-off-canvas data-position="right">
+<nav class="ms-mobilenav">
+	<ul class="main-menu">
+		{{#each menuitms}}
+		<li class="main-menu__item"><a class="link" href="{{itemUrl}}">{{itemName}}</a></li>
+		{{/each}}
+	</ul>
+</nav>
+</div>
+
+
+<div class="row ms-mobilenav_wrap hide-for-large">
+	<div class="medium-7 small-7 columns">
+		<button type="button" class="ms-mobilenav_trigger" data-toggle="offCanvasLeft" data-open="offCanvasLeft"><i class="fa fa-navicon"></i> Каталог</button>
+	</div>
+	<button type="button" class="medium-3 small-3 columns ms-shop-button" data-toggle="offCanvasRight" data-open="offCanvasRight">Магазин</button>
+</div>

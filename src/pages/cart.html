@@ -1,0 +1,121 @@
+{{> header}}
+{{> mob-sidebar}}
+
+<div class="row">
+    <div class="large-10 medium-10 small-10 columns ms-breadcrumbs cards__bk hide-for-small-only -big-padding">
+        <nav aria-label="You are here:" role="navigation">
+            <ul class="breadcrumbs">
+                <li><a href="javascript:void(0);">Матрасы</a></li>
+                <li><a href="javascript:void(0);">Детские матрасы</a></li>
+                <li class="disabled">Корзина</li>
+            </ul>
+        </nav>
+    </div>
+</div>
+    <h1 class="text-center">Корзина</h1>
+
+    {{#each cartitem}}
+    <div class="large-10 medium-10 small-10 columns product-in-cart callout" data-closable="fade-out">
+        <div class="large-2 medium-3 small-3 columns">
+            <img src="{{itemImageUrl}}" alt="">
+        </div>
+        <div class="large-2 medium-2 small-5 item-name columns">
+            <h3>{{itemName}}</h3>
+            <span>{{itemSubName}}</span>
+        </div>
+        <div class="large-2 medium-4 small-1 show-for-large item-price columns">
+            <h3>{{itemPrice}}</h3>
+            <span>{{itemDiscount}}</span>
+        </div>
+        <div class="large-2 medium-3 small-1 columns">
+            <form action="" class="price-form">
+                    <button class="button">-</button>
+                    <input type="number" value="1" data-min="1" data-max="999">
+                    <button class="button">+</button>
+                <select>
+                    <option value="150x160">150 х 160 см</option>
+                    <option value="140x160">140 х 160 см</option>
+                    <option value="150x160">150 х 160 см</option>
+                    <option value="150x160">150 х 160 см</option>
+                </select>
+            </form>
+
+        </div>
+        <div class="large-2 medium-2 small-10 total-price columns">
+            <h3>{{itemTotalPrice}}</h3>
+            <a href="javascript:void(0);" class="ms-delete" aria-label="Dismiss alert" type="button" data-close><img src="assets/img/icons/delete.png" alt=""></a>
+        </div>
+    </div>
+    {{/each}}
+    </div>
+<div class="row">
+    <div class="large-5 medium-6 small-10 columns">
+        <a href="javascript:void(0);" class="medium-back-to button -light hide-for-small-only">Назад к покупкам</a>
+        <a href="javascript:void(0);" class="button -light ms-clear-cart">Очистить корзину</a>
+    </div>
+    <div class="large-5 medium-4 small-10 cart-total columns">
+        <div class="large-5 medium-5 small-5 columns">
+          <span>Итого:</span>
+          <span>Кол-во: </span>
+          <span>Ваша скидка: </span>
+         </div>
+        <div class="large-5 medium-5 small-5 columns">
+        <span class="cart-total-price">6 975 руб</span>
+       <span class="cart-total-number">2</span>
+       <span class="cart-total-discount">1 575 руб</span>
+       </div>
+    </div>
+</div>
+<form>
+    <div class="row order-form">
+<div class="large-5 medium-6 small-10 personal-data columns">
+    <h3>Персональные данные</h3>
+
+    <fieldset class="large-10 columns">
+        <!--Выбери какой ты покемон-->
+        <input type="radio" name="pokemon" value="fiz-man" id="fiz-man" required><label for="fiz-man">Физическое лицо</label>
+        <input type="radio" name="pokemon" value="ur-man" id="ur-man"><label for="ur-man">Юридическое лицо</label>
+    </fieldset>
+    <div class="medium-5 columns">
+        <label><span>Имя и фамилия*</span>
+            <input type="text">
+        </label>
+    </div>
+    <div class="medium-5 columns">
+        <label><span>Телефон*</span>
+            <input type="text">
+        </label>
+    </div>
+    <div class="medium-5 columns">
+        <label><span>Адрес*</span>
+            <input type="text">
+        </label>
+    </div>
+    <div class="medium-5 columns">
+        <label><span>Email</span>
+            <input type="text">
+        </label>
+    </div>
+    <div class="large-5 medium-5 small-5 columns end">
+        <label><span class="form-label">Код купона</span>
+            <input type="text">
+        </label>
+    </div>
+</div>
+<div class="large-5 medium-4 small-10 order-it columns">
+    <h3>Оформление заказа</h3>
+    <fieldset class="large-5 medium-10 small-10 columns columns">
+        <legend>Выберите способ оплаты</legend>
+        <input type="radio" name="cash-pay" value="cash-pay" id="cash-pay" required><label for="cash-pay">Наличными курьеру <br> или банковской картой</label>
+    </fieldset>
+    <div class="large-5 medium-10 small-10 columns">
+        <label><span>Комментарий к заказу</span>
+            <textarea name="comment" id="" cols="10" rows="10"></textarea>
+        </label>
+    </div>
+    <a href="javascript:void(0);" class="large-5 medium-10 small-10 columns ms-comment-button button"><span>7 975 руб</span> • Оформить</a>
+</div>
+ </div>
+</form>
+{{> footer}}
+

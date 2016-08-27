@@ -1,0 +1,35 @@
+.ms-sidebar {
+  border-left: 1px solid $base-border-color;
+  border-right: 1px solid $base-border-color;
+  .is-accordion-submenu-parent[aria-expanded='false'] {
+    padding-bottom: 0;
+  }
+}
+.ms-sidebar__accordion {
+    color: #505050;
+    border-bottom: 1px solid $base-border-color;
+    padding: 20px 30px !important;
+    display: block;
+}
+.ms-sidebar__link {
+  color: #444;
+}
+
+.is-accordion-submenu-parent > a::after {
+  content: url(../img/icons/arrow.svg);
+  position: absolute;
+  right: 0;
+  top: 40%;
+  border: none;
+}
+  .ms-sidebar__accordion::after {
+    right: 2rem !important;
+  }
+.is-accordion-submenu-parent[aria-expanded='true'] > a::after {
+  margin-top: 15px;
+}
+.off-canvas {
+  .ms-sidebar {
+    border-top: 1px solid $base-border-color;
+  }
+}

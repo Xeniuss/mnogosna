@@ -1,0 +1,15 @@
+.ms-popular-brand__images {
+  width: 130px;
+  margin: 25px 50px 25px 0;
+  height: auto;
+  @include breakpoint(1024px down) {
+    width: 100px;
+  }
+  @include breakpoint(medium down) {
+    margin: 20px 40px 20px 0;
+  }
+  @include breakpoint(small down) {
+    width: 110px;
+    margin: 20px 10px;
+  }
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "itemName" : "Магазин",
+    "itemUrl"  : "#"
+  },
+  {
+    "itemName" : "Доставка и оплата",
+    "itemUrl"  : "/shipping.html"
+  },
+  {
+    "itemName" : "Контакты",
+    "itemUrl"  : "/contacts.html"
+  },
+  {
+    "itemName" : "О нас",
+    "itemUrl"  : "#"
+  },
+  {
+    "itemName" : "Гарантия",
+    "itemUrl"  : "#"
+  },
+  {
+    "itemName" : "Блог",
+    "itemUrl"  : "blog.html"
+  }
+]

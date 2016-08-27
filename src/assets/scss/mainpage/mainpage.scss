@@ -1,0 +1,23 @@
+.ms-mainpage__header {
+  text-transform: uppercase;
+  font-size: 24px;
+  &.-with-margin {
+    margin-bottom: 25px;
+  }
+}
+.ms-mainpade__textblock {
+h2 {
+  margin-bottom: 25px;
+}
+  margin-bottom: 30px;
+  &.-without-margin {
+    margin-bottom: 0;
+  }
+}
+@import 'slider--mainpage';
+@import 'new--mainpage';
+@import 'news--mainpage';
+@import 'brands--mainpage';
+@import 'how--mainpage';
+@import 'size--mainpage';
+

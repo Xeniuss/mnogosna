@@ -1,0 +1,41 @@
+.breadcrumbs li:not(:last-child)::after {
+  content: url(../img/icons/right-arrow.png);
+  width: 10px;
+  height: 10px;
+  top: 2px;
+}
+
+.breadcrumbs {
+  padding: 20px 0 0 0;
+  padding-left: 30px;
+ li {
+   text-transform: none;
+   font-size: 0.9em;
+ }
+  @include breakpoint(medium down)  {
+    padding: 0;
+    padding-left: 10px;
+    margin-bottom: 30px;
+  }
+}
+
+.breadcrumbs li a {
+  color: $base-lite-font-color;
+}
+
+  .ms-breadcrumbs {
+    margin:0;
+    &.-small-padding {
+    .breadcrumbs {
+      padding-bottom: 0;
+    }
+  }
+    &.-big-padding {
+      padding-top: 10px;
+      padding-bottom: 0;
+      .breadcrumbs {
+        padding-bottom: 0;
+      }
+    }
+}
+

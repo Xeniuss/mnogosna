@@ -1,0 +1,125 @@
+.contact-header {
+  border-bottom:1px solid $base-border-color;
+  padding: 14px 0;
+  margin: 0;
+}
+.contact-wrap__helper {
+  border-left:1px solid $base-border-color;
+  @include breakpoint(small down) {
+    border: none;
+}
+}
+.contact-header.end {
+  border-left:1px solid $base-border-color;
+  border-right:1px solid $base-border-color;
+}
+.contacts-column {
+  border-bottom:1px solid $base-border-color;
+
+ul {
+  padding: 40px 0 25px 25px;
+}
+  span {
+    margin-bottom: 20px;
+  }
+  li {
+    padding: 5px 0 5px 20px;
+  }
+
+}
+.locatin-column {
+  padding: 40px 0 25px 25px;
+  border: 1px solid $base-border-color;
+  border-top:none;
+  @include breakpoint(small down) {
+  padding: 10px;
+}
+  li {
+    color: $base-lite-font-color;
+    padding: 7px 0 7px 20px;
+    span {
+      color: $base-font-color;
+      font-weight: 500;
+    }
+  }
+}
+.location-list {
+  height: 365px;
+  overflow-y: scroll;
+}
+.work-time {
+  padding-bottom: 50px;
+  border-bottom:1px solid $base-border-color;
+  margin-bottom: 30px;
+}
+ul>span  {
+  display: block;
+  margin-bottom: 20px;
+}
+.contact-wrap {
+  .ms-sidebar{
+    border-right: none;
+  }
+  @include breakpoint(medium down) {
+    padding:0;
+  }
+}
+.contact-form-wrap {
+  margin-top: 50px;
+  border: 1px solid $base-border-color;
+}
+.contacts-form {
+  .column {
+    padding: 10px;
+  }
+}
+.contacts-form-header {
+  padding-left: 150px;
+  @include breakpoint(medium down) {
+    padding-left:0;
+  }
+}
+.locatin-column {
+  iframe {
+    @include breakpoint(medium down) {
+      width: 100%;
+      height: 400px;
+    }
+  }
+ }
+.ms-social-login {
+  .button {
+    padding: 12px 10px;
+    width: 50px;
+    height: 40px;
+    &:hover {
+      opacity: .6;
+    }
+  }
+  span {
+    width: 100%;
+    color: $base-lite-font-color;
+    display: block;
+    padding-bottom: 20px;
+  }
+  .button-group {
+    display: inline-block;
+  }
+}
+.ms-comment-button {
+  position: relative;
+  left: -10px;
+  &.-contacts-page {
+    @include breakpoint(medium down) {
+      left: 19%;
+    }
+    @include breakpoint(small down) {
+      left: -10px;
+    }
+  }
+}
+.message-phone-fix {
+  @include breakpoint(small down) {
+    margin-left: 10px;
+  }
+}

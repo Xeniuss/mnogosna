@@ -1,0 +1,222 @@
+{{> header}}
+{{> mob-psidebar}}
+
+<div class="row">
+    <div class="large-10 medium-10 small-10 columns ms-breadcrumbs hide-for-small-only -big-padding">
+        <nav aria-label="You are here:" role="navigation">
+            <ul class="breadcrumbs">
+                <li><a href="javascript:void(0);">Матрасы</a></li>
+                <li><a href="javascript:void(0);">Детские матрасы</a></li>
+                <li class="disabled">Корзина</li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<div class="row ms-product-intro">
+    <div class="large-6 medium-10 small-10 columns large-offset-2 end">
+        <h1>Детские матрасы</h1>
+        <p class="hide-for-small-only">Не потеряться в разнообразии ассортимента и купить детский матрас в кроватку помогут опытные консультанты интернет магазина
+            «МногоСна» <a href="javascript:void(0);">Подробнее</a></p>
+    </div>
+</div>
+
+<div class="row">
+    {{> psidebar}}
+    <ul class="vertical menu" data-accordion-menu>
+        <li style="border: none;">
+            <a class="link ms-filter__accordion show-for-small-only is-active" href="javascript:void(0);">Фильтр</a>
+            <ul class="menu vertical nested is-active">
+                <li>
+    <div class="large-8 medium-10 small-10 ms-ipad-fix columns">
+        {{> filter}}
+    </div>
+                </li>
+            </ul>
+        </li>
+    </ul>
+     <div class="large-8 medium-10 small-10 columns">
+         <div class="float-right">
+             <div class="large-2 medium-2 small-2 columns">
+                 <button class="ms-viewswitcher"><img id="ms-viewswitcher-img" src="assets/img/icons/prod-list.png" alt=""></button>
+             </div>
+             <div class="large-8 medium-8 small-8 columns">
+                 <select class="ms-minifilter hide-for-small-only">
+                     <option value="1">Популярность</option>
+                     <option value="2">Цена возрастание</option>
+                     <option value="3">Цена убывание</option>
+                     <option value="4">Новизне</option>
+                 </select>
+             </div>
+         </div>
+     </div>
+
+    <div class="large-8 medium-10 small-10 columns products-wrap">
+
+<!--====================================================================================================================-->
+        {{#repeat 6}}
+        <div class="large-3 medium-5 small-10 columns something-with-border end suggested-product __box-view">
+            <div class="orbit" role="region" aria-label="suggested product" data-orbit data-auto-play="0" >
+                <ul class="orbit-container">
+                    <li class="is-active orbit-slide">
+                        <div class="thumbnails">
+                            <img src="assets/img/productspage/1.png" alt="">
+                        </div>
+                        <h5>Матрас DreamExpert Base</h5>
+                        <input id="check-product1" type="checkbox"><label for="check-product1">В сравнение</label>
+                        <!--Класс: ms-sale-act для акций-->
+                        <!--<span class="ms-sale-act">Акция</span>-->
+                        <!--Класс: ms-sale-per для скидок-->
+                        <span class="ms-sale-per">30%</span>
+                    </li>
+                    <li class="orbit-slide">
+                        <h5>Матрас DreamExpert Base</h5>
+                        <div>
+                            <input id="check-product1" type="checkbox"><label for="check-product1">В сравнение</label>
+                        </div>
+                        <span class="ms-comments">Отзывы: <span class="ms-comments__counter">11</span></span>
+                        <ul class="no-bullet">
+                            <li>Жесткость: средняя</li>
+                            <li>Тип: беспружинный</li>
+                            <li>Высота: 22см</li>
+                            <li>Макс вес на 1 место: 130кг</li>
+                            <li>Анатомичность: средняя</li>
+                        </ul>
+                    </li>
+                </ul>
+                 <div class="paddinger">
+                     <select>
+                         <option value="150x160">150 х 160 см</option>
+                         <option value="140x160">140 х 160 см</option>
+                         <option value="150x160">150 х 160 см</option>
+                         <option value="150x160">150 х 160 см</option>
+                     </select>
+                     <button class="large-10 medium-10 small-10 columns total-product-price button">25 245 руб <span class="ms-separator">•</span>В&nbsp;корзину</button>
+                     <a href="javascript:void(0);" class="suggested-product__link top" data-toggle="getcall">Заказать по телефону
+                     </a>
+                     <div class="ms-custom-modal ms-custom-modal-product-top is-hidden" id="getcall" data-toggler="is-hidden">
+                         <form>
+                             <label><span>Введите ваш телефон и имя</span>
+                                 <input type="text">
+                             </label>
+                             <button class="book-button large-10 medium-10 small-10 columns button">25 245 руб • Позвонить</button>
+                         </form>
+                     </div>
+                     <nav class="orbit-bullets">
+                         <button class="is-active ms-first-prodpage" data-slide="0"><span class="show-for-sr">First slide</span></button>
+                         <button class="ms-second-prodpage" data-slide="1"><span class="show-for-sr">Second slide</span></button>
+                     </nav>
+                 </div>
+            </div>
+        </div>
+        {{/ repeat}}
+ <!--====================================================================================================================-->
+<!--
+Поскольку слишком много различий между сеткой и линиями в дизайне
+приходится писать совершенно другой шаблон разметки sorry :(
+-->
+<!--##############
+        lines
+##################-->
+<!--====================================================================================================================-->
+        {{#repeat 6}}
+        <div class="large-10 medium-10 small-10 columns something-with-border end suggested-product __line-view hide">
+                   <div class="large-3 medium-3 small-10 columns">
+                       <div class="thumbnails __line-view">
+                           <img src="assets/img/productspage/1.png" alt="">
+                       </div>
+                       <!--Класс: ms-sale-act для акций-->
+                       <!--<span class="ms-sale-act">Акция</span>-->
+                       <!--Класс: ms-sale-per для скидок-->
+                       <span class="ms-sale-per">30%</span>
+                   </div>
+                    <div class="large-4 medium-3 small-10 columns about-product__line-view">
+                        <h5>Матрас DreamExpert Base</h5>
+                        <ul class="no-bullet">
+                            <li>Жесткость: средняя</li>
+                            <li>Тип: беспружинный</li>
+                            <li>Высота: 22см</li>
+                            <li>Макс вес на 1 место: 130кг</li>
+                            <li>Анатомичность: средняя</li>
+                        </ul>
+
+                            <input id="check-product1" type="checkbox"><label for="check-product1">В сравнение</label>
+
+                        <span class="ms-comments">Отзывы:&nbsp;<span class="ms-comments__counter">11</span></span>
+
+                    </div>
+                <div class="large-3 medium-4 small-10 columns list-of-option __line-view">
+                <div class="paddinger">
+                    <select>
+                        <option value="150x160">Доп. слои</option>
+                        <option value="140x160">Доп. слои</option>
+                        <option value="150x160">Доп. слои</option>
+                        <option value="150x160">Доп. слои</option>
+                    </select>
+                    <select>
+                        <option value="150x160">150 х 160 см</option>
+                        <option value="140x160">140 х 160 см</option>
+                        <option value="150x160">150 х 160 см</option>
+                        <option value="150x160">150 х 160 см</option>
+                    </select>
+                    <button class="large-10 medium-10 small-10 columns total-product-price button">25 245 руб <span class="ms-separator">•</span>В&nbsp;корзину</button>
+                    <a href="javascript:void(0);" class="suggested-product__link top" data-toggle="getcall">Заказать по телефону
+                    </a>
+                    <div class="ms-custom-modal ms-custom-modal-product-top is-hidden" id="getcall" data-toggler="is-hidden">
+                        <form>
+                            <label><span>Введите ваш телефон и имя</span>
+                                <input type="text">
+                            </label>
+                            <button class="book-button large-10 medium-10 small-10 columns button">25 245 руб • Позвонить</button>
+                        </form>
+                    </div>
+                </div>
+                </div>
+        </div>
+        {{/ repeat}}
+        <!--====================================================================================================================-->
+
+    </div>
+</div>
+<div class="row">
+<div class="large-8 medium-10 small-10  float-right ms-compress-wrap columns">
+    <a href="javascript:void(0);" class="ms-showmore large-10 medium-10 small-10 columns button -light">Показать еще</a>
+    <div class="large-10 medium-10 small-10 columns">
+        <ul class="pagination" role="navigation" aria-label="Pagination">
+            <li class="pagination-previous"><a href="javascript:void(0);" aria-label="Prev page">Назад</a></li>
+            <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+            <li><a class="pagination__link" href="javascript:void(0);" aria-label="Page 2">2</a></li>
+            <li><a class="pagination__link hide-for-small-only" href="javascript:void(0);" aria-label="Page 3">3</a></li>
+            <li><a class="pagination__link hide-for-small-only" href="javascript:void(0);" aria-label="Page 4">4</a></li>
+            <li class="ellipsis" aria-hidden="true"></li>
+            <li><a class="pagination__link hide-for-small-only" href="javascript:void(0);" aria-label="Page 12">12</a></li>
+            <li><a class="pagination__link hide-for-small-only" href="javascript:void(0);" aria-label="Page 13">13</a></li>
+            <li class="pagination-next"><a href="javascript:void(0);" aria-label="Next page">Далее</a></li>
+        </ul>
+        <h2 class="hide-for-large">Детские кровати</h2>
+        <p>Не потеряться в разнообразии ассортимента и купить детский матрас в кроватку помогут опытные консультанты интернет магазина «МногоСна»
+            <a href="javascript:void(0);">Подробнее</a></p>
+        <br>
+    </div>
+    <a href="javascript:void(0);" style="background-image:url('assets/img/productspage/howprod1.png');" class="large-6 medium-5 small-10 large-how-4 columns">
+            <h4>Как выбрать матрас</h4>
+            <span class="ms-how-desc">Статья как правильно выбирать и подбирать матрас для Вас</span>
+            <span href="javascript:void(0);" class="ms-show-more show-for-large">Подробнее</span>
+    </a>
+    <a href="javascript:void(0);"style="background-image:url('assets/img/productspage/howprod2.png');" class="large-4 medium-5 small-10 large-how-3 columns">
+            <h5>Акция на кровати Ascona в подарок матрас</h5>
+            <span href="javascript:void(0);" class="ms-show-more show-for-large">Подробнее</span>
+    </a>
+    <div class="large-10 medium-10 small-10 columns ms-size-tag">
+        <a href="javascript:void(0);" class="ms-size-tag__link">Производители</a>
+        <a href="javascript:void(0);" class="ms-size-tag__link">Беспружинные</a>
+        <a href="javascript:void(0);" class="ms-size-tag__link">Пружинные</a>
+        <a href="javascript:void(0);" class="ms-size-tag__link">В рулоне</a>
+        <a href="javascript:void(0);" class="ms-size-tag__link">Премиум</a>
+        <a href="javascript:void(0);" class="ms-size-tag__link">Из латекса</a>
+        <a href="javascript:void(0);" class="ms-size-tag__link">Из кокоса</a>
+        <a href="javascript:void(0);" class="ms-size-tag__link">Кокос-латекс</a>
+    </div>
+</div>
+</div>
+
+    {{> footer}}

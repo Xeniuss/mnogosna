@@ -1,0 +1,57 @@
+.ms-prodsidebar {
+  background: $base-bg-color;
+  .is-accordion-submenu-parent > a::after {
+    right: 2rem;
+  }
+
+  ul>li>ul>li>a, ul>li>ul>span>a  {
+    margin:0;
+    color: #707070;
+    font-weight: 300;
+    &:hover {
+      color: #000;
+    }
+  }
+  ul>li>a {
+    font-weight: 500;
+    color: #505050;
+    line-height: 1;
+    padding: 14.5px;
+    margin: 0;
+  }
+
+  ul>li>ul>span {
+    line-height: 1;
+    margin: 0;
+    margin-left: 25px;
+    margin-bottom: 15px;
+  }
+
+  ul>li>ul>li>a {
+    margin-bottom: 20px;
+    padding: 0;
+    line-height: 1;
+    margin-left: 50px;
+  }
+
+  .is-accordion-submenu-parent[aria-expanded='false'] {
+    padding: 0;
+    &>a {
+      background: $base-lite-color;
+      width: 100%;
+      border: 1px solid #e4e4e4;
+    }
+  }
+  .is-accordion-submenu-parent[aria-expanded='false'] + .is-accordion-submenu-parent[aria-expanded='false'] {
+    a {
+      border-top:none;
+    }
+  }
+}
+.mob-sidebar {
+  .ms-prodsidebar {
+    background: #fff !important;
+  }
+}
+
+
